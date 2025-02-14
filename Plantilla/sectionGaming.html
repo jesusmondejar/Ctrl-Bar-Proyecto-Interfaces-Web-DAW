@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/sectionGaming.css">
     <style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}</style>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;700&family=Plus+Jakarta+Sans:wght@300;500;700&display=swap" rel="stylesheet">
   </head>
   <body>
     <!-- IE panel-->
@@ -47,9 +49,6 @@
                            alt="Logo Panda sin fondo"/>
                   </a>
               </div>
-              
-              
-                
               </div>
               <div class="rd-navbar-menu-wrap">
                 <div class="rd-navbar-nav-wrap">
@@ -71,11 +70,11 @@
                       </li>
                       <li class="active"><a href="sectionGaming.html"><span>Gaming</span></a>
                       </li>
-                      <li><a href="about.html"><span>About Us</span></a>
+                      <li><a href="about.html"><span>Carta</span></a>
                       </li>
-                      <li><a href="typography.html"><span>Typography</span></a>
+                      <li><a href="typography.html"><span>Sobre nosotros</span></a>
                       </li>
-                      <li><a href="contacts.html"><span>Contacts</span></a>
+                      <li><a href="contacts.html"><span>Contacto</span></a>
                       </li>
                     </ul>
                   </div>
@@ -92,71 +91,106 @@
               </div>
             </div>
           </nav>
-        </div>
+        </div> 
       </header>
+
       <!-- Page Contents-->
-      <main class="page-content">
-        <!-- Section Intro-->
-        <section class="context-dark">
-          <div class="parallax-container" data-parallax-img="images/intro-01-1920x955.jpg">
-            <div class="parallax-content">
-              <div class="container">
-                <div class="section-110 row justify-content-sm-center align-items-sm-center">
-                  <div class="col-lg-8"><img src="images/intro-logo-175x173.png" alt="" width="175" height="173">
-                    <h1 class="font-accent"><span class="big">About Us</span></h1>
-                    <ul class="list-inline list-inline-dashed p">
-                      <li class="list-inline-item"><a href="index.html">Home</a></li>
-                      <li class="list-inline-item">About Us
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
+      <div class="titulo">
+        <h2>LISTADO DETORNEOS</h2>
+        <div class="line"></div>
+    </div>
+      <main class="container">
+
+        <!-- FILTROS -->
+        <aside class="filters">
+            <h3>FILTROS</h3>
+            <p><strong>SE HAN ENCONTRADO <span id="torneos-count">47</span> TORNEOS</strong></p>
+            
+            <label>Búsqueda</label>
+            <input type="text" id="search" placeholder="🔍 Buscar torneo..." onkeyup="filtrarTorneos()">
+            
+            <label>Fechas de inicio</label>
+            <div class="date-range">
+                <input type="date" id="start-date">
+                <span>a</span>
+                <input type="date" id="end-date">
             </div>
-          </div>
+
+            <label>Juegos</label>
+            <select id="game-filter">
+                <option value="">No hay selección</option>
+                <option value="FIFA">FIFA</option>
+                <option value="Teamfight Tactics">league of legends</option>
+            </select>
+
+            <label>Plataformas</label>
+            <select id="platform-filter">
+                <option value="">No hay selección</option>
+                <option value="PS4">PS5</option>
+                <option value="PC">PC</option>
+            </select>
+
+            <label>Modo</label>
+            <select id="mode-filter">
+                <option value="Todos">Todos</option>
+            </select>
+
+            <button>APLICAR FILTROS</button>
+        </aside>
+
+        <!-- TORNEOS -->
+        <section class="torneos-grid" id="torneosContainer">
+            <article class="torneo-card finalizado">
+                <img src="images/sectionGamingIMG/Fifa25.jpg" alt="Torneo FIFA 25">
+                <div class="torneo-info">
+                    <span class="estado">FINALIZADO</span>
+                    <h3>Torneo FIFA 20 - Gratis</h3>
+                    <p>🎮 <strong>Juego:</strong> FIFA</p>
+                    <p>🖥️ <strong>Plataforma:</strong> PS5</p>
+                    <p>👥 <strong>Plazas:</strong> 16 plazas</p>
+                    <p>⏰ <strong>Hora:</strong> 18:30H | <strong>Check-in:</strong> 18:00H</p>
+                    <a href="#" class="torneos-btn">Más Información</a>
+                </div>
+            </article>
+            <article class="torneo-card finalizado">
+              <img src="images/sectionGamingIMG/cod.jpg" alt="Torneo FIFA 25">
+              <div class="torneo-info">
+                  <span class="estado">FINALIZADO</span>
+                  <h3>Torneo FIFA 20 - Gratis</h3>
+                  <p>🎮 <strong>Juego:</strong> FIFA</p>
+                  <p>🖥️ <strong>Plataforma:</strong> PS5</p>
+                  <p>👥 <strong>Plazas:</strong> 16 plazas</p>
+                  <p>⏰ <strong>Hora:</strong> 18:30H | <strong>Check-in:</strong> 18:00H</p>
+                  <a href="#" class="torneos-btn">Más Información</a>
+              </div>
+          </article>
+
+            <article class="torneo-card finalizado">
+                <img src="images/sectionGamingIMG/lol.jpg" alt="Torneo Teamfight Tactics">
+                <div class="torneo-info">
+                    <span class="estado">FINALIZADO</span>
+                    <h3>Torneo Online TFT - Gratis</h3>
+                    <p>🎮 <strong>Juego:</strong> league of legends</p>
+                    <p>🖥️ <strong>Plataforma:</strong> PC</p>
+                    <p>👥 <strong>Plazas:</strong> 64 plazas</p>
+                    <p>⏰ <strong>Hora:</strong> 16:15H | <strong>Check-in:</strong> 16:00H</p>
+                    <a href="#" class="torneos-btn">Más Información</a>
+                </div>
+            </article>
+            <article class="torneo-card finalizado">
+              <img src="images/sectionGamingIMG/lol.jpg" alt="Torneo Teamfight Tactics">
+              <div class="torneo-info">
+                  <span class="estado">FINALIZADO</span>
+                  <h3>Torneo Online TFT - Gratis</h3>
+                  <p>🎮 <strong>Juego:</strong> league of legends</p>
+                  <p>🖥️ <strong>Plataforma:</strong> PC</p>
+                  <p>👥 <strong>Plazas:</strong> 64 plazas</p>
+                  <p>⏰ <strong>Hora:</strong> 16:15H | <strong>Check-in:</strong> 16:00H</p>
+                  <a href="#" class="torneos-btn">Más Información</a>
+              </div>
+          </article>
         </section>
-        <!-- Section About us-->
-        <section class="section-torneos">
-          <div class="container">
-              <h2>Listado de Torneos</h2>
-              <div class="torneos-grid">
-                  <article class="torneo-card">
-                      <img src="torneo1.jpg" alt="Cartel del Torneo FIFA 20" loading="lazy">
-                      <div class="torneo-info">
-                          <h3>Torneo FIFA 20 - Gratis</h3>
-                          <ul>
-                              <li><strong>Plataforma:</strong> PS4</li>
-                              <li><strong>Fecha:</strong> 10 de julio, 2024</li>
-                          </ul>
-                          <a href="#" class="torneos-btn">Más Información</a>
-                      </div>
-                  </article>
-              </div>
-          </div>
-      </section>
-      
-
-<!-- -------        -->
-        <!-- Section Our Awards-->
-        <section class="section-eventos">
-          <div class="container">
-              <h2>Listado de Eventos</h2>
-              <div class="eventos-grid">
-                  <article class="evento-card">
-                      <img src="evento1.jpg" alt="Cartel del evento Myrtia Dates" loading="lazy">
-                      <div class="evento-info">
-                          <h3>Myrtia Dates</h3>
-                          <p><strong>Inicio:</strong> 23 de marzo, 2024 - 20:30h</p>
-                          <a href="#" class="eventos-btn">Más Información</a>
-                      </div>
-                  </article>
-              </div>
-          </div>
-      </section>
-      
-
-
-        <!-- Section Best Goods-->
+  <!-- Section Best Goods-->
         <section style="background: url(images/image-11-1920x675.png) no-repeat center center">
          
         </section>
@@ -165,17 +199,23 @@
          
         </section>
       </main>
+  
+  <div class="tituloEventos" STYLE="background-color: rgba(0, 0, 0, 0.815);">
+    <h2><span>LISTADO DE</span> EVENTOS</h2>
+  </div>  
+        
+      
+<!-- FIN DE MI SECCIÓN -->
+
+
+
+        
 
       <footer class="section-relative section-top-66 section-bottom-34 page-footer bg-gray-base context-dark">
        
       </footer>
     </div>
 
-
-
-
-
-    
     <!-- Global Mailform Output-->
     <div class="snackbars" id="form-output-global"></div>
     <!-- Java script-->
