@@ -1,8 +1,8 @@
 
 <!-- RD Navbar Simple submenu--><!DOCTYPE html>
-<html class="wow-animation" lang="en">
+<html class="wow-animation" lang="ES">
   <head>
-    <title>About Us</title>
+    <title>Gaming</title>
     <meta charset="utf-8">
     <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
@@ -18,6 +18,7 @@
     <style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}</style>
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;700&family=Plus+Jakarta+Sans:wght@300;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
     <!-- IE panel-->
@@ -94,78 +95,182 @@
         </div> 
       </header>
 
+
       <!-- Page Contents-->
-      <div class="titulo">
-        <h2>LISTADO DE TORNEOS</h2>
-        <div class="line"></div>
-    </div>
-      <main class="container">
-
-        <!-- FILTROS -->
-        <aside class="filters">
-            <h3>FILTROS</h3>
-            <p><strong>SE HAN ENCONTRADO <span id="torneos-count">47</span> TORNEOS</strong></p>
-            
-            <label>Búsqueda</label>
-            <input type="text" id="search" placeholder="🔍 Buscar torneo..." onkeyup="filtrarTorneos()">
-            
-            <label>Fechas de inicio</label>
-            <div class="date-range">
-                <input type="date" id="start-date">
-                <span>a</span>
-                <input type="date" id="end-date">
-            </div>
-
-            <label>Juegos</label>
-            <select id="game-filter">
-                <option value="">No hay selección</option>
-                <option value="FIFA">FIFA</option>
-                <option value="Teamfight Tactics">league of legends</option>
-            </select>
-
-            <label>Plataformas</label>
-            <select id="platform-filter">
-                <option value="">No hay selección</option>
-                <option value="PS4">PS5</option>
-                <option value="PC">PC</option>
-            </select>
-
-            <label>Modo</label>
-            <select id="mode-filter">
-                <option value="Todos">Todos</option>
-            </select>
-
-            <button>APLICAR FILTROS</button>
-        </aside>
-
-        <!-- TORNEOS -->
-        <section class="torneos-grid" id="torneosContainer">
-            <article class="torneo-card finalizado">
-                <img src="images/sectionGamingIMG/Fifa25.jpg" alt="Torneo FIFA 25">
-                <div class="torneo-info">
-                    <span class="estado">FINALIZADO</span>
-                    <h3>Torneo FIFA 20 - Gratis</h3>
-                    <p>🎮 <strong>Juego:</strong> FIFA</p>
-                    <p>🖥️ <strong>Plataforma:</strong> PS5</p>
-                    <p>👥 <strong>Plazas:</strong> 16 plazas</p>
-                    <p>⏰ <strong>Hora:</strong> 18:30H | <strong>Check-in:</strong> 18:00H</p>
-                    <a href="#" class="torneos-btn">Más Información</a>
+      <div class="context-dark">
+        <div class="parallax-container" data-parallax-img="images/sectionGamingIMG/2.jpg">
+          <div class="parallax-content">
+            <div class="container">
+              <div class="section-110 row justify-content-sm-center align-items-sm-center">
+                <div class="col-lg-8">
+                  <h1 class="font-accent"><span class="big">Gaming</span></h1>
+                  <ul class="list-inline list-inline-dashed p">
+                    <li class="list-inline-item"><a href="index.html">Home</a></li>
+                    <li class="list-inline-item">Gaming
+                    </li>
+                  </ul>
                 </div>
-            </article>
-            <article class="torneo-card finalizado">
-              <img src="images/sectionGamingIMG/cod.jpg" alt="Torneo FIFA 25">
-              <div class="torneo-info">
-                  <span class="estado">FINALIZADO</span>
-                  <h3>Torneo FIFA 20 - Gratis</h3>
-                  <p>🎮 <strong>Juego:</strong> FIFA</p>
-                  <p>🖥️ <strong>Plataforma:</strong> PS5</p>
-                  <p>👥 <strong>Plazas:</strong> 16 plazas</p>
-                  <p>⏰ <strong>Hora:</strong> 18:30H | <strong>Check-in:</strong> 18:00H</p>
-                  <a href="#" class="torneos-btn">Más Información</a>
               </div>
-          </article>
+            </div>
+          </div>
+        </div>
+      </div>
 
-            <article class="torneo-card finalizado">
+      
+
+
+      <main>
+
+         <div class="seven">
+                <h2>EVENTOS</h2>
+        </div>
+        <div class="px-10 py-20 font-ibmplex font-regular text-slate-800 bg-slate-200">
+          <section class="flex flex-col mx-auto w-full max-w-4xl">
+            <div class="my-2 flex flex-col md:flex-row items-center">
+              <div class="flex flex-row md:flex-row p-4 bg-slate-50 rounded-xl shadow-md shadow-slate-200/40 hover:shadow-lg hover:shadow-slate-400/40 transition-shadow w-full md:w-auto">
+                <div class="flex flex-col items-center justify-center w-full md:w-48 h-24 px-5 py-5 font-merriweather bg-rose-100 rounded-lg">
+                  <div class="text-sm font-bold font-ibmplex">TODAY</div>
+                  <div class="text-3xl font-bold">23:00</div>
+                </div>
+                <div class="flex flex-col justify-center pl-6 w-full">
+                  <h2 class="font-merriweather font-black text-xl pb-4">LEC Winter 2025 - Playoffs</h2>
+                  <p class="text-sm"> Equipos :</p>
+                  <p class="text-sm">G2 Gozen | GIANTX GC | Karmine Corp GC | NASR Ignite | Lunar | ALTERNATE aTTaX Ruby | HEROIC Valkyries | SK Nebula | ZERANCE GC | BLVKHVND</p>
+                </div>
+              </div>
+              <div class="text-xs bg-slate-50 p-4 rounded-r-md shadow-md shadow-slate-200/40 hover:cursor-pointer hover:bg-slate-900 hover:text-slate-50"><span class="text-sm">+</span> Add to calendar</div>
+            </div>
+        
+            <div class="my-2 flex flex-col md:flex-row items-center">
+              <div class="flex flex-row md:flex-row p-4 bg-slate-50 rounded-xl shadow-md shadow-slate-200/40 hover:shadow-lg hover:shadow-slate-400/40 transition-shadow w-full md:w-auto">
+                <div class="flex flex-col items-center justify-center w-full md:w-48 h-24 px-5 py-5 font-merriweather bg-amber-100 rounded-lg">
+                  <div class="text-sm font-bold font-ibmplex">17 - 19 FEB</div>
+                  <div class="text-3xl font-bold">11:00</div>
+                </div>
+                <div class="flex flex-col justify-center pl-6 w-full">
+                  <h2 class="font-merriweather font-black text-xl pb-4">BLAST Premier World Final 2024</h2>
+                  <p class="text-sm"> Equipos :</p>
+                  <p class="text-sm">G2 Gozen | GIANTX GC | Karmine Corp GC | NASR Ignite | Lunar | ALTERNATE aTTaX Ruby | HEROIC Valkyries | SK Nebula | ZERANCE GC | BLVKHVND</p>
+                </div>
+              </div>
+              <div class="text-xs bg-slate-50 p-4 rounded-r-md shadow-md shadow-slate-200/40 hover:cursor-pointer hover:bg-slate-900 hover:text-slate-50"><span class="text-sm">+</span> Add to calendar</div>
+            </div>
+        
+            <div class="my-2 flex flex-col md:flex-row items-center">
+              <div class="flex flex-row md:flex-row p-4 bg-slate-50 rounded-xl shadow-md shadow-slate-200/40 hover:shadow-lg hover:shadow-slate-400/40 transition-shadow w-full md:w-auto">
+                <div class="flex flex-col items-center justify-center w-full md:w-48 h-24 px-5 py-5 font-merriweather bg-indigo-100 rounded-lg">
+                  <div class="text-sm font-bold font-ibmplex">18 - 19 FEB</div>
+                  <div class="text-3xl font-bold">09:00</div>
+                </div>
+                <div class="flex flex-col justify-center pl-6 w-full">
+                  <h2 class="font-merriweather font-black text-xl pb-4">Darkness Park in Randers</h2>
+                  <p class="text-sm"> Equipos :</p>
+                  <p class="text-sm">G2 Gozen | GIANTX GC | Karmine Corp GC | NASR Ignite | Lunar | ALTERNATE aTTaX Ruby | HEROIC Valkyries | SK Nebula | ZERANCE GC | BLVKHVND</p>
+                </div>
+              </div>
+              <div class="text-xs bg-slate-50 p-4 rounded-r-md shadow-md shadow-slate-200/40 hover:cursor-pointer hover:bg-slate-900 hover:text-slate-50"><span class="text-sm">+</span> Add to calendar</div>
+            </div>
+          </section>
+        </div>
+        
+
+
+
+
+
+
+        <div class="seven">
+                <h2>tORNEOS</h2>
+        </div>
+        <div class="DivTorneos" style="background-color: #0d1326">
+          <div class="container" style="padding-top: 80px;">
+          <!-- FILTROS -->
+            <aside class="filters">
+                <h3>FILTROS</h3>
+                <p><strong>SE HAN ENCONTRADO <span id="torneos-count">47</span> TORNEOS</strong></p>
+                
+                <label>Búsqueda</label>
+                <input type="text" id="search" placeholder="🔍 Buscar torneo..." onkeyup="filtrarTorneos()">
+                <label>Fechas de inicio</label>
+                <div class="date-range">
+                    <input type="date" id="start-date">
+                    <span>a</span>
+                    <input type="date" id="end-date">
+                </div>
+                <label>Juegos</label>
+                <select id="game-filter">
+                    <option value="">No hay selección</option>
+                    <option value="FIFA">FIFA</option>
+                    <option value="Teamfight Tactics">league of legends</option>
+                </select>
+
+                <label>Plataformas</label>
+                <select id="platform-filter">
+                    <option value="">No hay selección</option>
+                    <option value="PS4">PS5</option>
+                    <option value="PC">PC</option>
+                </select>
+
+                <label>Modo</label>
+                <select id="mode-filter">
+                    <option value="Todos">Todos</option>
+                </select>
+
+                <button>APLICAR FILTROS</button>
+            </aside>
+
+            <!-- TORNEOS -->
+            <section class="torneos-grid " id="torneosContainer">
+                <article class="torneo-card finalizado">
+                    <img src="images/sectionGamingIMG/Fifa25.jpg" alt="Torneo FIFA 25">
+                    <div class="torneo-info">
+                        <span class="estado">FINALIZADO</span>
+                        <h3>Torneo FIFA 20 - Gratis</h3>
+                        <p>🎮 <strong>Juego:</strong> FIFA</p>
+                        <p>🖥️ <strong>Plataforma:</strong> PS5</p>
+                        <p>👥 <strong>Plazas:</strong> 16 plazas</p>
+                        <p>⏰ <strong>Hora:</strong> 18:30H | <strong>Check-in:</strong> 18:00H</p>
+                        <a href="#" class="torneos-btn">Más Información</a>
+                    </div>
+                </article>
+                <article class="torneo-card finalizado">
+                  <img src="images/sectionGamingIMG/cod.jpg" alt="Torneo FIFA 25">
+                  <div class="torneo-info">
+                      <span class="estado">FINALIZADO</span>
+                      <h3>Torneo FIFA 20 - Gratis</h3>
+                      <p>🎮 <strong>Juego:</strong> FIFA</p>
+                      <p>🖥️ <strong>Plataforma:</strong> PS5</p>
+                      <p>👥 <strong>Plazas:</strong> 16 plazas</p>
+                      <p>⏰ <strong>Hora:</strong> 18:30H | <strong>Check-in:</strong> 18:00H</p>
+                      <a href="#" class="torneos-btn">Más Información</a>
+                  </div>
+              </article>
+
+                <article class="torneo-card finalizado">
+                    <img src="images/sectionGamingIMG/lol.jpg" alt="Torneo Teamfight Tactics">
+                    <div class="torneo-info">
+                        <span class="estado">FINALIZADO</span>
+                        <h3>Torneo Online TFT - Gratis</h3>
+                        <p>🎮 <strong>Juego:</strong> league of legends</p>
+                        <p>🖥️ <strong>Plataforma:</strong> PC</p>
+                        <p>👥 <strong>Plazas:</strong> 64 plazas</p>
+                        <p>⏰ <strong>Hora:</strong> 16:15H | <strong>Check-in:</strong> 16:00H</p>
+                        <a href="#" class="torneos-btn">Más Información</a>
+                    </div>
+                </article>
+                <article class="torneo-card finalizado">
+                  <img src="images/sectionGamingIMG/lol.jpg" alt="Torneo Teamfight Tactics">
+                  <div class="torneo-info">
+                      <span class="estado">FINALIZADO</span>
+                      <h3>Torneo Online TFT - Gratis</h3>
+                      <p>🎮 <strong>Juego:</strong> league of legends</p>
+                      <p>🖥️ <strong>Plataforma:</strong> PC</p>
+                      <p>👥 <strong>Plazas:</strong> 64 plazas</p>
+                      <p>⏰ <strong>Hora:</strong> 16:15H | <strong>Check-in:</strong> 16:00H</p>
+                      <a href="#" class="torneos-btn">Más Información</a>
+                  </div>
+              </article>
+              <article class="torneo-card finalizado">
                 <img src="images/sectionGamingIMG/lol.jpg" alt="Torneo Teamfight Tactics">
                 <div class="torneo-info">
                     <span class="estado">FINALIZADO</span>
@@ -189,22 +294,23 @@
                   <a href="#" class="torneos-btn">Más Información</a>
               </div>
           </article>
-        </section>
-  <!-- Section Best Goods-->
-        <section style="background: url(images/image-11-1920x675.png) no-repeat center center">
-         
-        </section>
-        <!-- Testimonials-->
-        <section class="bg-gray-darkest section-98 section-110 context-dark">
-         
-        </section>
+              
+            </section>
+      <!-- Section Best Goods-->
+            <!-- <section style="background: url(images/image-11-1920x675.png) no-repeat center center">
+            </section> -->
+            <!-- Testimonials-->
+            <!-- <section class="bg-gray-darkest section-98 section-110 context-dark">
+            </section> -->
+          </div>
+        </div>
+
+
+
+
       </main>
   
-  <div class="tituloEventos" STYLE="background-color: rgba(0, 0, 0, 0.815);">
-    <h2><span>LISTADO DE</span> EVENTOS</h2>
-  </div>  
-        
-      
+
 <!-- FIN DE MI SECCIÓN -->
 
 
