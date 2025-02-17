@@ -208,6 +208,77 @@ h2 {
 .torneos-btn:hover {
     background: #0056b3;
 }
+/* SECCIÓN DE CONSOLAS */
+.consolas-section {
+    background-color: #0d1326; /* Fondo oscuro */
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.consolas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Ajuste dinámico */
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.consola-card {
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding-bottom: 15px;
+}
+
+.consola-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.consola-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    display: block;
+}
+
+.consola-card h3 {
+    color: #222;
+    font-size: 20px;
+    margin: 15px 0;
+    font-weight: 600;
+}
+
+.consola-card p {
+    color: #333;
+    font-size: 14px;
+    margin: 5px 10px;
+}
+
+/* BOTÓN DE RESERVAR */
+.reservar-btn {
+    display: block;
+    background: #007BFF; /* Azul llamativo */
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin: 15px auto;
+    width: 80%;
+    text-align: center;
+    border-radius: 8px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.reservar-btn:hover {
+    background: #0056b3;
+    transform: scale(1.05);
+}
 
 /* Responsividad */
 @media (max-width: 768px) {
@@ -282,7 +353,16 @@ h2 {
     .rd-navbar-brand img {
         width: 120px; /* Reducir el tamaño del logo */
     }
+    /* Consolas */
+    .consolas-grid {
+        grid-template-columns: repeat(1, 1fr); /* 1 columna en móviles */
+    }
 
+    .consola-card {
+        width: 100%;
+        max-width: 400px; /* Evita que sean demasiado grandes */
+        margin: 0 auto;
+    }
     
 }
 
