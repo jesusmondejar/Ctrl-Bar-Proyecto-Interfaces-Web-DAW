@@ -300,16 +300,23 @@ h2 {
 
     /* texto h2 */
     .seven h2 {
-        grid-template-columns: 120px max-content 1fr; /* Reduce el tamaño de la línea izquierda */
-        font-size: 30px; /* Reduce el tamaño del texto */
-        grid-gap: 10px; /* Reduce el espacio entre elementos */
+        display: grid;
+        grid-template-columns: 155px max-content 1fr; /* Estructura de las columnas */
+        align-items: center; /* Centra verticalmente */
+        justify-content: center; /* Centra el contenido */
+        text-align: center; /* Asegura que el texto esté centrado */
+        font-size: 30px; /* Tamaño del texto */
+        grid-gap: 10px; /* Espacio entre elementos */
+        position: relative;
     }
-
-    .seven h2:before {
-        width: 120px; /* Línea izquierda más corta en móviles */
+    
+    .seven h2:before, .seven h2:after {
+        content: ""; /* Se asegura de que la línea exista */
+        width: 155px; /* Tamaño de la línea izquierda */
+        height: 2px; /* Grosor de la línea */
+        background-color: black; /* Color de la línea */
+        display: block;
     }
-
-
     /*FILTROS  */
     .filters {
         width: 100%;
@@ -421,7 +428,7 @@ h2 {
 .triangle {
     position: relative;
     background: #ffffff;
-    height: 10px;
+    height: 15px;
   }
   
   .triangle::before {
