@@ -10592,7 +10592,7 @@ fieldset[disabled] .swiper-slide-caption .pagination-classic > li + li:not(:last
 .rd-navbar-default.rd-navbar-fixed, .rd-navbar-floated.rd-navbar-fixed, .rd-navbar-default.rd-navbar-fixed .rd-navbar-panel, .rd-navbar-floated.rd-navbar-fixed .rd-navbar-panel {
 	height: 56px;
 }
-
+/* icono nav movil */
 .rd-navbar-default.rd-navbar-fixed .rd-navbar-toggle, .rd-navbar-floated.rd-navbar-fixed .rd-navbar-toggle {
 	position: fixed;
 	z-index: 17;
@@ -10606,7 +10606,7 @@ fieldset[disabled] .swiper-slide-caption .pagination-classic > li + li:not(:last
 	line-height: 48px;
 	text-align: center;
 	cursor: pointer;
-	color: #fff;
+	color: #0d1326;
 	background: none;
 	border: none;
 	outline: none;
@@ -10634,11 +10634,11 @@ fieldset[disabled] .swiper-slide-caption .pagination-classic > li + li:not(:last
 .rd-navbar-default.rd-navbar-fixed .rd-navbar-toggle span:after, .rd-navbar-floated.rd-navbar-fixed .rd-navbar-toggle span:after {
 	top: 8px;
 }
-
+/* ICONO NAV MOVIL */
 .rd-navbar-default.rd-navbar-fixed .rd-navbar-toggle span:after, .rd-navbar-floated.rd-navbar-fixed .rd-navbar-toggle span:after, .rd-navbar-default.rd-navbar-fixed .rd-navbar-toggle span:before, .rd-navbar-floated.rd-navbar-fixed .rd-navbar-toggle span:before, .rd-navbar-default.rd-navbar-fixed .rd-navbar-toggle span, .rd-navbar-floated.rd-navbar-fixed .rd-navbar-toggle span {
 	width: 24px;
 	height: 4px;
-	background-color: #fff;
+	background-color: #0d1326;
 	backface-visibility: hidden;
 	border-radius: 0;
 }
@@ -11841,7 +11841,7 @@ fieldset[disabled] .swiper-slide-caption .pagination-classic > li + li:not(:last
 	position: relative;
 	z-index: 3;
 }
-
+/* Icono buscar */
 .rd-navbar-default.rd-navbar-static .rd-navbar-search-toggle span, .rd-navbar-floated.rd-navbar-static .rd-navbar-search-toggle span {
 	display: inline-block;
 	position: relative;
@@ -11851,7 +11851,7 @@ fieldset[disabled] .swiper-slide-caption .pagination-classic > li + li:not(:last
 	line-height: 24px;
 	text-align: center;
 	cursor: pointer;
-	color: #fff;
+	color: #0d1326; 
 	background: none;
 	border: none;
 	outline: none;

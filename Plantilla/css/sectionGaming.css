@@ -30,8 +30,6 @@ body {
 /* === BASE HEADING === */ 
 
 
-
-
 h2 {
     position: relative;
     padding: 0;
@@ -330,10 +328,31 @@ h2 {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Color negro con 50% de opacidad */
+    background: rgba(0, 0, 0, 0.7); /* Color negro con 50% de opacidad */
     z-index: 1;
 }
 .parallax-content {
     position: relative;
     z-index: 2;
 }
+
+/* Separador  */
+
+.triangle {
+    position: relative;
+    background: #ffffff;
+    height: 50px;
+  }
+  
+  .triangle::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 30px 30px 30px;
+    border-color: transparent transparent #0D3126 transparent;
+    left: 50%;
+    transform: translateX(-50%);
+  }
