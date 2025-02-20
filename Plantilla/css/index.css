@@ -1,0 +1,646 @@
+/* Navbar NO SOLAPA*/
+.rd-navbar {
+    position:relative;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #ffffff; /* Asegura un fondo sólido */
+    height: 110px; /* Ajusta la altura si es necesario */
+    padding-bottom: 10px;
+   
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    /* background: #0D1326; */
+    color: #F2F2F2;
+    margin: 0;
+    padding: 0;
+    /* padding-top: 90px; Ajusta este valor dependiendo de la altura del navbar */
+
+}
+
+::selection { background:rgb(51 65 85); color: rgb(241 245 249);}
+
+
+.font-accent {
+    font-size: 50px;
+}
+
+/* === BASE HEADING === */ 
+
+
+h2 {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    font-weight: 300;
+    font-size: 40px;
+    color: #080808;
+    -webkit-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+  }
+  
+  h2 span {
+    display: block;
+    font-size: 0.5em;
+    line-height: 1.3;
+  }
+  h2 em {
+    font-style: normal;
+    font-weight: 600;
+  }
+
+/* Style 7
+   ----------------------------- */
+   .seven h2 {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    text-align: left;
+        font-size:50px; font-weight:300; color:#222; letter-spacing:1px;
+        text-transform: uppercase;
+    
+        display: grid;
+        grid-template-columns: 200px max-content 1fr;
+        grid-template-rows: 27px 0;
+        grid-gap: 20px;
+        align-items: center;
+    }
+    
+    .seven h2:after,.seven h2:before {
+        content: " ";
+        display: block;
+        border-bottom: 1px solid #c50000;
+        border-top: 1px solid #c50000;
+        height: 5px;
+      background-color:#f8f8f8;
+    }
+
+
+
+/* --------------------------- */
+
+/* CONTENEDOR PRINCIPAL */
+
+
+.container {
+    padding-top: 60px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 20px;
+    max-width: 1600px; 
+    width: 100%;
+    padding: 20px;
+    align-items: start;
+    margin: 0 auto;
+
+}
+
+/* FILTROS */
+.filters {
+    background: #ffffff;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: 0;
+    border-radius: 10px;
+    width: 350px;
+    justify-self: end;
+}
+
+.filters h3 {
+    color: #424859;
+    text-transform: uppercase;
+    border-bottom: 2px solid #7D828C;
+    padding-bottom: 5px;
+}
+
+.filters p, label{
+    color: #0D0D0D;
+}
+
+.filters label {
+    display: block;
+    margin-top: 10px;
+}
+
+.filters input, .filters select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    background: #424859;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+.filters button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    background: #007BFF;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.filters button:hover {
+    background: #0056b3;
+}
+
+/* TORNEOS */
+.torneos-grid {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las tarjetas se muevan a la siguiente fila */
+    justify-content: center;
+    gap: 20px;
+}
+
+.torneo-card {
+    background: #424859;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(210, 200, 200, 0.3);
+    width: 330px;
+    flex: 0 0 auto;
+    border: 5px solid #ffffff;
+
+}
+
+.torneo-card img {
+    width: 100%;
+    display: block;
+}
+
+.torneo-info {
+    padding: 15px;
+    text-align: left;
+}
+
+.torneo-info h3 {
+    color: #F2F2F2;
+}
+
+.estado {
+    display: block;
+    background: red;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.torneos-btn {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    background: #007BFF;
+    color: white;
+    text-decoration: none;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.torneos-btn:hover {
+    background: #0056b3;
+}
+/* SECCIÓN DE CONSOLAS */
+.consolas-section {
+    background-color: #0d1326; /* Fondo oscuro */
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.consolas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Ajuste dinámico */
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.consola-card {
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding-bottom: 15px;
+}
+
+.consola-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.consola-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    display: block;
+}
+
+.consola-card h3 {
+    color: #222;
+    font-size: 20px;
+    margin: 15px 0;
+    font-weight: 600;
+}
+
+.consola-card p {
+    color: #333;
+    font-size: 14px;
+    margin: 5px 10px;
+}
+
+/* BOTÓN DE RESERVAR */
+.reservar-btn {
+    display: block;
+    background: #007BFF; /* Azul llamativo */
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin: 15px auto;
+    width: 80%;
+    text-align: center;
+    border-radius: 8px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.reservar-btn:hover {
+    background: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .container {
+        /* flex-direction: column;
+        align-items: center; */
+        display: flex;
+        flex-direction: column;
+    }
+    
+    /* IMG HEADER */
+    .parallax-container {
+        height: auto; /* La altura se ajusta automáticamente */
+        min-height: 400px; /* Altura mínima */
+        background-size: contain; /* La imagen se reduce en lugar de recortarse */
+        background-position: center top; /* Alinea la imagen arriba */
+
+    }
+
+    /* texto h2 */
+    .seven h2 {
+        display: grid;
+        grid-template-columns: 155px max-content 1fr; /* Estructura de las columnas */
+        align-items: center; /* Centra verticalmente */
+        justify-content: center; /* Centra el contenido */
+        text-align: center; /* Asegura que el texto esté centrado */
+        font-size: 30px; /* Tamaño del texto */
+        grid-gap: 10px; /* Espacio entre elementos */
+        position: relative;
+    }
+    
+    .seven h2:before, .seven h2:after {
+        content: ""; /* Se asegura de que la línea exista */
+        width: 155px; /* Tamaño de la línea izquierda */
+        height: 2px; /* Grosor de la línea */
+        background-color: black; /* Color de la línea */
+        display: block;
+    }
+    /*FILTROS  */
+    .filters {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .filters.active {
+        display: block;
+    }
+
+    .filter-toggle {
+        display: block;
+        text-align: center;
+        background: #007BFF;
+        color: white;
+        padding: 10px;
+        font-size: 18px;
+        cursor: pointer;
+        margin-bottom: 10px;
+        border-radius: 5px;
+    }
+    /* TORNEOS */
+
+    .torneos-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .torneo-card {
+        width: 350px; /* Tamaño fijo para que no se reduzca */
+        flex: 0 0 auto; /* Evita que se haga más pequeña */
+    }
+
+  
+    .rd-navbar {
+        height: 70px; /* Reducir la altura del navbar */
+    }
+
+    .rd-navbar-brand img {
+        width: 120px; /* Reducir el tamaño del logo */
+    }
+    /* Consolas */
+    .consolas-grid {
+        grid-template-columns: repeat(1, 1fr); /* 1 columna en móviles */
+    }
+
+    .consola-card {
+        width: 100%;
+        max-width: 400px; /* Evita que sean demasiado grandes */
+        margin: 0 auto;
+    }
+    
+}
+
+
+
+
+/* Mejorar los botones en móviles */
+.torneos-btn, .eventos-btn {
+    font-size: 1rem;
+    padding: 10px;
+}
+
+.filters input, .filters select {
+    font-size: 0.9rem;
+}
+
+
+
+.rd-navbar-brand img {
+    height: auto;
+    display: block;
+   margin-top: -10px; 
+   
+}
+
+
+
+
+
+ /* iMG HEADER */
+ .parallax-container {
+    padding: 150px 0; /* Ajusta la separación arriba y abajo */
+    position: relative; /* Necesario para el pseudo-elemento */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.parallax-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Color negro con 50% de opacidad */
+    z-index: 1;
+}
+.parallax-content {
+    position: relative;
+    z-index: 2;
+}
+
+/* Separador  */
+
+/* From Uiverse.io by csozidev */ 
+/* Spotify music card made by: csozi | Website: www.csozi.hu*/
+
+.card {
+    position: relative;
+    width: 250px;
+    height: 120px;
+    background: #191414;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  
+  .top {
+    position: relative;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .pfp {
+    position: relative;
+    top: 5px;
+    left: 5px;
+    height: 40px;
+    width: 40px;
+    background-color: #d2d2d2;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .title-1 {
+    color: white;
+    font-size: 25px;
+    font-weight: bolder;
+  }
+  
+  .title-2 {
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  
+  .time {
+    width: 90%;
+    background-color: #5e5e5e;
+    height: 6px;
+    border-radius: 3px;
+    position: absolute;
+    left: 5%;
+    bottom: 22px;
+  }
+  
+  .elapsed {
+    width: 42%;
+    background-color: #1db954;
+    height: 100%;
+    border-radius: 3px;
+  }
+  
+  .controls {
+    color: white;
+    display: flex;
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .volume {
+    height: 100%;
+    width: 48px;
+  }
+  
+  .air {
+    height: 100%;
+    width: 48px;
+  }
+  
+  .controls svg {
+    cursor: pointer;
+    transition: 0.1s;
+  }
+  
+  .controls svg:hover {
+    color: #1db954;
+  }
+  
+  .volume {
+    opacity: 0;
+    position: relative;
+    transition: 0.2s;
+  }
+  
+  .volume .slider {
+    height: 4px;
+    background-color: #5e5e5e;
+    width: 80%;
+    border-radius: 2px;
+    margin-top: 8px;
+    margin-left: 10%;
+  }
+  
+  .volume .slider .green {
+    background-color: #1db954;
+    height: 100%;
+    width: 80%;
+    border-radius: 3px;
+  }
+  
+  .volume .circle {
+    background-color: white;
+    height: 6px;
+    width: 6px;
+    border-radius: 3px;
+    position: absolute;
+    right: 20%;
+    top: 60%;
+  }
+  
+  .volume_button:hover ~ .volume {
+    opacity: 1;
+  }
+  
+  .timetext {
+    color: white;
+    font-size: 8px;
+    position: absolute;
+  }
+  
+  .time_now {
+    bottom: 11px;
+    left: 10px;
+  }
+  
+  .time_full {
+    bottom: 11px;
+    right: 10px;
+  }
+  
+  .playing {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    gap: 1px;
+    width: 30px;
+    height: 20px;
+  }
+  
+  .greenline {
+    background-color: #1db954;
+    height: 20px;
+    width: 2px;
+    position: relative;
+    transform-origin: bottom;
+  }
+  
+  .line-1 {
+    animation: infinite playing 1s ease-in-out;
+    animation-delay: 0.2s;
+  }
+  
+  .line-2 {
+    animation: infinite playing 1s ease-in-out;
+    animation-delay: 0.5s;
+  }
+  
+  .line-3 {
+    animation: infinite playing 1s ease-in-out;
+    animation-delay: 0.6s;
+  }
+  
+  .line-4 {
+    animation: infinite playing 1s ease-in-out;
+    animation-delay: 0s;
+  }
+  
+  .line-5 {
+    animation: infinite playing 1s ease-in-out;
+    animation-delay: 0.4s;
+  }
+  
+  @keyframes playing {
+    0% {
+      transform: scaleY(0.1);
+    }
+  
+    33% {
+      transform: scaleY(0.6);
+    }
+  
+    66% {
+      transform: scaleY(0.9);
+    }
+  
+    100% {
+      transform: scaleY(0.1);
+    }
+  }
+.triangle {
+    position: relative;
+    background: #ffffff;
+    height: 15px;
+  }
+  
+  .triangle::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 30px 30px 30px;
+    border-color: transparent transparent #0d1326 transparent;
+    left: 50%;
+    transform: translateX(-50%);
+  }

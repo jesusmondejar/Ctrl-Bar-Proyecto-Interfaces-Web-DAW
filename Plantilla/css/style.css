@@ -24434,6 +24434,771 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
 	width: 100%;
 }
 
+/* From Uiverse.io by necatimertmetin */ 
+.switch-card {
+	display: flex;
+	align-items: stretch;
+	width: 470px;
+	height: 196.5px; /* 104px * 3 */
+	
+  }
+  .screen-outline {
+	display: flex;
+	align-items: stretch;
+	padding: 10px 14px;
+	justify-content: center;
+	border-radius: 2px;
+	background: rgb(71, 77, 79);
+	background: linear-gradient(
+	  180deg,
+	  rgba(71, 77, 79, 1) 0%,
+	  rgba(90, 97, 100, 1) 3%,
+	  rgba(46, 50, 51, 1) 5%,
+	  rgba(46, 50, 51, 1) 100%
+	);
+  }
+  .screen-border {
+	border-top: 17px solid black;
+	border-bottom: 17px solid black;
+	border-left: 25px solid black;
+	border-right: 25px solid black;
+	border-radius: 6px;
+	flex: 1;
+	background-color: black;
+	width: 263px;
+	display: flex;
+  }
+  .screen {
+	border-radius: 2px;
+	background: lightgrey;
+	flex: 1;
+	overflow: hidden;
+	cursor: pointer;
+	display: flex; /* Activa Flexbox */
+ 	justify-content: center; /* Centra horizontalmente */
+	align-items: center; /* Centra verticalmente */
+	height: 100%; /* Asegura que ocupe toda la altura de la pantalla */
+  }
+  .screen img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+  }
+  .joy-con {
+	background-color: pink;
+	width: 65px;
+	height: 196.5px;
+	position: relative;
+  }
+  .joy-con.left {
+	border-top-left-radius: 40px;
+	border-bottom-left-radius: 40px;
+	background: black;
+	background: linear-gradient(
+  148deg,
+  #919091 0%,  /* Color claro */
+  #2a2a2a 100% /* Color oscuro */
+);
+box-shadow:
+inset -3px -4px 10px #2a2a2a, /* Sombra exterior oscura (arriba) */
+inset 0px 5px 3px #919091;    /* Sombra interior clara (abajo) */
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+  }
+  .joy-con.right {
+	border-top-right-radius: 40px;
+	border-bottom-right-radius: 40px;
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+	background: black;
+	background: linear-gradient(
+  148deg,
+  #2a2a2a 0%,  /* Color oscuro */
+  #919091 100% /* Color claro */
+);
+box-shadow:
+  inset -3px -4px 10px #2a2a2a, /* Sombra exterior oscura (arriba) */
+  inset 0px 5px 3px #919091;    /* Sombra interior clara (abajo) */
+  }
+  
+  .joy-con.left .minus {
+	position: absolute;
+	top: 18px;
+	width: 10px;
+	height: 2px;
+	border: 0.8px solid #222;
+	border-radius: 1px;
+	right: 5px;
+	background-color: #3c3d41;
+  }
+  
+  .joy-con.left .joystick {
+	left: 50%;
+	transform: translate(-50%);
+	top: 35px;
+  }
+  .joy-con.right .joystick {
+	top: 87.5px;
+	left: 14px;
+	filter: contrast(130%) drop-shadow(0px 1px 2px #00000088);
+  }
+  .joystick {
+	background-color: #2d2e33;
+	border-radius: 100%;
+	height: 28px;
+	width: 28px;
+	position: relative;
+	border: 1px solid #2d2e33;
+	overflow: hidden;
+	cursor: pointer;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	grid-column-gap: 1px;
+	grid-row-gap: 1px;
+	filter: drop-shadow(0px 1px 2px #00000088);
+  }
+  .joystick-edge {
+	background-color: #444;
+  }
+  .joystick-inner-border {
+	position: absolute;
+  
+	top: 50%;
+	left: 50%;
+	background-color: #2d2e33;
+	padding: 1px;
+	z-index: 2;
+	border-radius: 100%;
+	transform: translate(-50%, -50%);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  }
+  .joystick-inner {
+	width: 22px;
+	height: 22px;
+	border-radius: 50%;
+	background-color: #282c2f;
+	box-shadow:
+	  inset 0px -4px 4px rgb(49, 49, 49),
+	  inset 0px 4px 12px rgb(124, 124, 124),
+	  inset 0px 4px 6px rgb(0, 0, 0);
+	z-index: 3;
+	position: relative;
+  }
+  
+  .numpad-container {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 44px;
+	height: 44px;
+  }
+  .joy-con.left .numpad-container {
+	top: 82px;
+	left: 12px;
+	color: #1b1b1c;
+	font-size: 8px;
+  }
+  .joy-con.right .numpad-container {
+	top: 28.5px;
+	left: 8px;
+	color: #d7d7d7;
+	font-size: 7px;
+  }
+  
+  .numpad-middle {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+  }
+  
+  .plus-symbol {
+	width: 10px;
+	height: 10px;
+	position: absolute;
+	display: inline-block;
+	top: 14.5px;
+	left: 5px;
+	cursor: pointer;
+  }
+  .plus-symbol-overlap-fixer {
+	position: absolute;
+	background-color: #333;
+	width: 2px;
+	height: calc(100% - 2px);
+	border-radius: 1px;
+	top: 50%;
+	left: 50%;
+	z-index: 3;
+	transform: translate(-50%, -50%);
+  }
+  .plus-symbol::before,
+  .plus-symbol::after {
+	content: "";
+	position: absolute;
+	background-color: #333;
+	border: 0.8px solid #222;
+	border-radius: 1px;
+  }
+  
+  .plus-symbol::before {
+	width: 2px;
+	height: 86.5%;
+	left: 50%;
+	transform: translateX(-50%);
+  }
+  
+  .plus-symbol::after {
+	width: 86.5%;
+	height: 2px;
+	top: 50%;
+	transform: translateY(-50%);
+  }
+  
+  .numpad-button {
+	width: 12px;
+	height: 12px;
+	background-color: #505050;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	border: 1px solid #2d2e33;
+	box-shadow:
+	  inset -0.5px -0.5px 1.5px rgba(92, 92, 92, 0.5),
+	  /* İç gölgeler küçük boyuta uygun şekilde azaltıldı */ inset 0.2px 1px 0.8px
+		rgba(143, 143, 143, 0.658),
+	  inset /* Üst kısımda hafif ışık efekti */ -1px -1px 2px
+		rgba(31, 31, 31, 0.76),
+	  0px 0px 3px #00000055;
+  }
+  .numpad-part {
+	flex: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  }
+  
+  .record-button {
+	width: 10px;
+	height: 10px;
+	cursor: pointer;
+	border: 1px solid #2d2e33;
+	border-radius: 1px;
+	position: absolute;
+	top: 134px;
+	left: 39px;
+	background: rgb(96, 95, 101);
+	background: linear-gradient(135deg, #605f65 0%, rgba(60, 61, 66, 1) 100%);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  }
+  .record-button-inner {
+	width: 4px;
+	height: 4px;
+	background: rgb(96, 95, 101);
+	background: linear-gradient(135deg, #605f65 0%, rgba(60, 61, 66, 1) 100%);
+	border: 1px solid #2d2e33;
+	border-radius: 50%;
+  }
+  
+  .home-button-border {
+	position: absolute;
+	cursor: pointer;
+	top: 132.5px;
+	left: 12px;
+	border: 1px solid #1b1b1c;
+	background: linear-gradient(135deg, #a0a0a0 0%, #303030 100%);
+	height: 14px;
+	width: 14px;
+	padding: 1px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  }
+  .home-button {
+	width: 12px;
+	height: 12px;
+	border: 0.9px solid #1b1b1c;
+	background: linear-gradient(180deg, #6b6b6b 0%, #303030 100%);
+	border-radius: 50%;
+	display: flex;
+	color: black;
+	align-items: center;
+	justify-content: center;
+	font-size: 9px;
+  }
+  
+  .button {
+	cursor: pointer;
+  }
+  .heart-card {
+	position: relative;
+	width: 200px;
+	height: 200px;
+	background-color: #ff6b6b;
+	transform: rotate(-45deg);
+	margin-top: 50px;
+	z-index: 2;
+  }
+  
+  .heart-card::before,
+  .heart-card::after {
+	content: "";
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	background-color: #ff6b6b;
+	border-radius: 50%;
+	z-index: -1;
+  }
+  
+  .heart-card::before {
+	top: -100px;
+	left: 0;
+  }
+  
+  .heart-card::after {
+	left: 100px;
+	top: 0;
+  }
+  
+  .content {
+	position: absolute;
+	top: 50px;
+	left: 50px;
+	width: 100px;
+	height: 100px;
+	transform: rotate(40deg);
+	text-align: center;
+	color: white;
+  }
+  
+  .content h2 {
+	font-size: 18px;
+	margin-bottom: 10px;
+  }
+  
+  .content p {
+	font-size: 14px;
+  }
+
+
+  /* From Uiverse.io by andrew-demchenk0 */ 
+.card {
+	--main-color: #fff;
+	--bg-color: #090909;
+	--sub-main-color: #B9B9B9;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	width: 360px;
+	height: 478px;
+	background: var(--bg-color);
+	border-radius: 20px;
+	padding: 30px;
+  }
+  
+  .card__menu {
+	cursor: pointer;
+  }
+  
+  .card__img {
+	height: 224px;
+	width: 224px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-inline: auto;
+	background: #131313;
+	border-radius: 100%;
+  }
+  
+  .card__img svg {
+	width: 154px;
+	height: 154px;
+	border-radius: 100%;
+  }
+  
+  .card__title {
+	font-weight: 500;
+	font-size: 28px;
+	color: var(--main-color);
+	text-align: center;
+	margin-bottom: 10px;
+  }
+  
+  .card__subtitle {
+	font-weight: 400;
+	font-size: 16px;
+	color: var(--sub-main-color);
+	text-align: center;
+	cursor: pointer;
+  }
+  
+  .card__wrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	gap: 10px;
+	margin-top: 20px;
+  }
+  
+  .card__time {
+	font-weight: 400;
+	font-size: 12px;
+	color: var(--main-color);
+  }
+  
+  .card__timeline {
+	width: 100%;
+	height: 4px;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+  }
+  
+  .card__timeline progress {
+	width: 100%;
+	height: 100%;
+	border-radius: 100px;
+  }
+  
+  .card__timeline progress::-webkit-progress-bar {
+	background-color: #424242;
+	border-radius: 100px;
+  }
+  
+  .card__timeline progress::-webkit-progress-value {
+	background-color: #fff;
+	border-radius: 100px;
+  }
+  
+  .card__btn {
+	border: none;
+	background: transparent;
+	cursor: pointer;
+  }
+  
+  .card__btn path {
+	fill: var(--main-color);
+  }
+  
+  .card__btn-play {
+	width: 60px;
+	height: 60px;
+	background: var(--main-color);
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+  
+  .card__btn-play path {
+	fill: var(--bg-color);
+  }
+
+  .text-left h1 {
+	font-size: 3rem; /* Tamaño del título */
+	font-weight: bold;
+	margin-bottom: 1rem; /* Espacio inferior */
+  }
+  
+  .mt-4 {
+	margin-top: 2rem; /* Espacio superior para el botón */
+  }
+
+  .screen h2 {
+	font-size: 2rem; /* Tamaño del texto */
+	font-weight: bold;
+	margin: 0; /* Elimina el margen predeterminado */
+	padding: 1rem; /* Espaciado interno */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%; /* Asegura que el texto ocupe toda la pantalla */
+  }
+  
+  .switch-card {
+	margin: 0 auto; /* Centra la consola horizontalmente */
+	transform: scale(1.2); /* Aumenta el tamaño de la consola */
+	transform-origin: center; /* Asegura que el escalado sea desde el centro */
+  }
+  
+  .mt-4 {
+	margin-top: 2rem; /* Espacio entre la consola y el botón */
+  }
+
+
+  /* From Uiverse.io by doniaskima */ 
+.btn-12,
+.btn-12 *,
+.btn-12 :after,
+.btn-12 :before,
+.btn-12:after,
+.btn-12:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+
+.btn-12 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+  text-transform: uppercase;
+}
+
+.btn-12:disabled {
+  cursor: default;
+}
+
+.btn-12:-moz-focusring {
+  outline: auto;
+}
+
+.btn-12 svg {
+  display: block;
+  vertical-align: middle;
+}
+
+.btn-12 [hidden] {
+  display: none;
+}
+
+.btn-12 {
+  border-radius: 99rem;
+  border-width: 2px;
+  overflow: hidden;
+  padding: 0.8rem 3rem;
+  position: relative;
+}
+
+.btn-12 span {
+  mix-blend-mode: difference;
+}
+
+.btn-12:after,
+.btn-12:before {
+  background: linear-gradient(
+    90deg,
+    #fff 25%,
+    transparent 0,
+    transparent 50%,
+    #fff 0,
+    #fff 75%,
+    transparent 0
+  );
+  content: "";
+  inset: 0;
+  position: absolute;
+  transform: translateY(var(--progress, 100%));
+  transition: transform 0.2s ease;
+}
+
+.btn-12:after {
+  --progress: -100%;
+  background: linear-gradient(
+    90deg,
+    transparent 0,
+    transparent 25%,
+    #fff 0,
+    #fff 50%,
+    transparent 0,
+    transparent 75%,
+    #fff 0
+  );
+  z-index: -1;
+}
+
+.btn-12:hover:after,
+.btn-12:hover:before {
+  --progress: 0;
+}
+
+/* From Uiverse.io by Cevorob */ 
+.birra, .ctrl {
+	border: 0;
+	background: ghostwhite;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	justify-content: center;
+	padding: 1em 1em 1em 3em;
+	position: relative;
+	overflow: hidden;
+	font-size: 17px;
+	font-family: inherit;
+	border-radius: 12px;
+	box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+  }
+  
+  .birra svg {
+	position: absolute;
+	left: 0.4em;
+	width: 40px;
+	height: 40px;
+	transform: rotateY(-180deg);
+	transition: transform 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+  }
+  
+  .birra:hover svg {
+	transform: rotateY(-180deg) translateX(-0.25em);
+  }
+  
+  .birra:active {
+	transform: scale(0.98);
+  }
+
+
+  /* From Uiverse.io by JkHuger */ 
+.wave-menu {
+	border: 4px solid #858585;
+	border-radius: 50px;
+	width: 200px;
+	height: 45px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0;
+	margin: 0;
+	cursor: pointer;
+	transition: ease 0.2s;
+	position: relative;
+	background: #fff;
+	display: flex;
+  	align-items: center;
+	gap: 4px; /* Espacio entre las barras del Wave Menu */
+ 	padding: 0;
+ 	list-style: none;
+  }
+
+  .wave-menu-container {
+	display: flex;
+	justify-content: center; /* Centra horizontalmente */
+	margin-top: 20px; /* Margen superior para separar de los nombres */
+  }
+  
+  .wave-menu li {
+	list-style: none;
+	height: 30px;
+	width: 4px;
+	border-radius: 10px;
+	background: #858585;
+	margin: 0 6px;
+	padding: 0;
+	animation-name: wave1;
+	animation-duration: 0.3s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	transition: ease 0.2s;
+  }
+  
+  .wave-menu:hover > li {
+	background: #fff;
+  }
+  
+  .wave-menu:hover {
+	background: #545FE5;
+  }
+  
+  .wave-menu li:nth-child(2) {
+	animation-name: wave2;
+	animation-delay: 0.2s;
+  }
+  
+  .wave-menu li:nth-child(3) {
+	animation-name: wave3;
+	animation-delay: 0.23s;
+	animation-duration: 0.4s;
+  }
+  
+  .wave-menu li:nth-child(4) {
+	animation-name: wave4;
+	animation-delay: 0.1s;
+	animation-duration: 0.3s;
+  }
+  
+  .wave-menu li:nth-child(5) {
+	animation-delay: 0.5s;
+  }
+  
+  .wave-menu li:nth-child(6) {
+	animation-name: wave2;
+	animation-duration: 0.5s;
+  }
+  
+  .wave-menu li:nth-child(8) {
+	animation-name: wave4;
+	animation-delay: 0.4s;
+	animation-duration: 0.25s;
+  }
+  
+  .wave-menu li:nth-child(9) {
+	animation-name: wave3;
+	animation-delay: 0.15s;
+  }
+
+  .titulo-inicio {
+	font-size: 3rem; /* Tamaño del título */
+	font-weight: bold;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para resaltar */
+	margin-bottom: 20px; /* Espacio inferior */
+	display: flex;
+	align-items: center; /* Alinea verticalmente el texto y el botón */
+	gap: 10px; /* Espacio entre el texto y el botón */
+	  
+  }
+/* From Uiverse.io by r7chardgh */
+.ctrl {
+	display: flex;
+	position: relative;
+	width: 3em;
+	height: 3em;
+	transform: rotateX(30deg);
+	border-radius: 0.2em;
+	border: 1px solid #3f3f3f;
+	box-shadow: 0 0.3em 0 0.1em #3f3f3f;
+	transition: all 150ms;
+  }
+  
+  .ctrl::after {
+	position: absolute;
+	content: "+";
+	top: 50%; /* Centra verticalmente */
+	left: 50%; /* Centra horizontalmente */
+	transform: translate(-50%, -50%); /* Ajusta el centrado */
+	color: #3f3f3f;
+	font-size: 1.5em; /* Ajusta el tamaño del símbolo "+" */
+	text-align: center;
+	line-height: 1; /* Asegura que el texto esté centrado verticalmente */
+  }
+  
+  .ctrl:active {
+	transform: rotateX(30deg) translateY(0.3em);
+	box-shadow: 0 0 0 0 #3f3f3f;
+  }
+  
+	
+  
+
 @media (max-width: 1199.98px) {
 	.banner-top {
 		display: none;
