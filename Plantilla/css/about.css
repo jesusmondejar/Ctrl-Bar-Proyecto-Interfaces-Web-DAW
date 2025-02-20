@@ -1,0 +1,295 @@
+/* ==============================
+   ESTILOS GENERALES
+============================== */
+body {
+    background-color: #F2F2F2;
+    color: #0D1326;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ==============================
+   AJUSTES DEL MENÚ
+============================== */
+.rd-navbar {
+    background-color: rgba(13, 19, 38, 0.95) !important;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.rd-navbar-nav > li > a {
+    color: rgba(255, 255, 255, 0.8) !important;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 10px 15px;
+    transition: color 0.3s ease-in-out, border-bottom 0.3s ease-in-out;
+}
+
+.rd-navbar-nav > li.active > a {
+    color: #FFA500 !important;
+    border-bottom: 3px solid #FFA500;
+}
+
+.rd-navbar-nav > li:hover > a {
+    color: #FFD700 !important;
+    border-bottom: 3px solid #FFD700;
+}
+
+/* ==============================
+   SECCIÓN SOBRE NOSOTROS
+============================== */
+#sobre-nosotros {
+    padding-top: 140px;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: auto; /* Elimina la altura fija */
+    gap: 50px;
+    margin-bottom: 20px; /* Añade margen inferior */
+}
+
+/* ==============================
+   IMÁGENES LATERALES (REPETITIVAS)
+============================== */
+#sobre-nosotros::before,
+#sobre-nosotros::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 25%;
+    min-height: 100%;
+    background: url('https://i.etsystatic.com/40533556/r/il/3f1b57/5037018325/il_fullxfull.5037018325_tmca.jpg') repeat-y center;
+    background-size: contain;
+    opacity: 0.15;
+}
+
+#sobre-nosotros::before {
+    left: 0;
+}
+
+#sobre-nosotros::after {
+    right: 0;
+}
+
+/* ==============================
+   TÍTULOS Y ENCABEZADOS
+============================== */
+h2 {
+    font-size: 2.8em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #0D1326;
+}
+
+h3 {
+    font-size: 2em;
+    color: #424859;
+    margin-top: 40px;
+}
+
+/* ==============================
+   CONTENEDORES PRINCIPALES
+============================== */
+.contenido {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* ==============================
+   SECCIONES CON TARJETAS MEJOR INTEGRADAS
+============================== */
+.seccion-multimedia,
+.seccion-galeria,
+.seccion-audio,
+.seccion-testimonios {
+    margin: 40px auto;
+    padding: 30px;
+    background: #E8E8E8; /* Apenas más oscuro que el fondo */
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.03); /* Sombras súper suaves */
+    max-width: 900px;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+/* Hover más sutil */
+.seccion-multimedia:hover,
+.seccion-galeria:hover,
+.seccion-audio:hover,
+.seccion-testimonios:hover {
+    transform: scale(1.01);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* ==============================
+   LISTA DE BENEFICIOS
+============================== */
+.texto {
+    text-align: left;
+    margin: auto;
+    max-width: 700px;
+}
+
+.texto p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.texto ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.texto ul li {
+    font-size: 1.1em;
+    padding-left: 25px;
+    margin-bottom: 10px;
+    background: url('check-icon.png') no-repeat left center;
+    background-size: 20px;
+}
+
+/* ==============================
+   GALERÍA DE IMÁGENES MEJORADA
+============================== */
+.galeria {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+    max-width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap; /* Permite que las imágenes se ajusten mejor */
+}
+
+.galeria img {
+    width: 30%;
+    height: auto; /* Ajuste dinámico de altura */
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    object-fit: contain; /* Evita cortes y mantiene la imagen completa */
+}
+
+/* Hover con efecto sutil */
+.galeria img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* ==============================
+   SECCIÓN TESTIMONIOS 
+============================== */
+.seccion-testimonios {
+    margin: 60px auto 100px; /* Asegura espacio antes del footer */
+    padding: 35px;
+    background: #EAEAEA; /* Apenas más oscuro que el fondo general */
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.03);
+    max-width: 800px;
+    text-align: center;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.seccion-testimonios:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Testimonios individuales */
+.testimonio {
+    margin: 15px 0;
+    font-size: 1.1em;
+    font-style: italic;
+    color: #424859;
+}
+
+/* Destacar el nombre del cliente */
+.testimonio strong {
+    display: block;
+    font-weight: bold;
+    color: #0D1326;
+    margin-top: 8px;
+}
+
+/* ==============================
+   BOTÓN CONTÁCTANOS
+============================== */
+.contact-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 1.1em;
+    font-weight: bold;
+    background: #0D1326;
+    color: #FFFFFF;
+    border-radius: 6px;
+    text-decoration: none;
+    text-align: center;
+    width: fit-content;
+    transition: background 0.3s ease-in-out, transform 0.2s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-button:hover {
+    color: yellow;
+    background: #1B1F33;
+    transform: scale(1.03);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* ==============================
+   FOOTER 
+============================== */
+footer {
+    padding-top: 50px;
+    padding-bottom: 30px;
+    background: #0D1326;
+    color: white;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* ==============================
+   RESPONSIVE (MÓVIL Y TABLET)
+============================== */
+@media (max-width: 1024px) {
+    #sobre-nosotros {
+        padding-top: 120px;
+        margin-bottom: 140px;
+    }
+
+    .galeria {
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+    }
+
+    .galeria img {
+        width: 80%; /* Más grande en pantallas pequeñas */
+    }
+
+    .contenido {
+        padding: 10px;
+    }
+
+    #sobre-nosotros::before,
+    #sobre-nosotros::after {
+        display: none;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
