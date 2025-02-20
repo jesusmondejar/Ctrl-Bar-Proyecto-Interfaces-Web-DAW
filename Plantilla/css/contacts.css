@@ -1,0 +1,186 @@
+/* ===========================
+   SECCIÓN DE CONTACTO
+=========================== */
+#contacto {
+    position: relative;
+    background: url("https://www.grupocmsh.es/wp-content/uploads/2016/12/grupo_cmsh_contacto.jpg") no-repeat center;
+    background-size: cover;
+    background-position: right 18%; /* Ajuste fino para encajar con header y footer */
+    padding: 120px 20px 80px; /* Espaciado superior extra */
+    min-height: calc(100vh - 200px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Color azul para títulos */
+.titulo-contacto {
+    font-size: 2.5em;
+    color: #1e3a8a; /* Azul oscuro */
+    margin-bottom: 15px;
+}
+
+.descripcion-contacto {
+    font-size: 1.2em;
+    color: #424859;
+    margin-bottom: 30px;
+}
+
+/* Contenedor del formulario e información */
+.contact-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 900px; /* Ajuste fino para evitar solapamiento con la imagen */
+    gap: 50px; /* Separación extra entre formulario e info */
+    transform: translateX(-30px); /* Desplazamiento a la izquierda */
+}
+
+/* Formulario */
+.contact-form {
+    flex: 1;
+    min-width: 300px;
+    max-width: 450px;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+/* Inputs y textarea */
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.contact-form textarea {
+    height: 120px;
+    resize: none;
+}
+
+/* Botón */
+.contact-form button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1em;
+    font-weight: bold;
+    background: #1e3a8a;
+    color: #ffffff;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.contact-form button:hover {
+    background: #153075;
+    color: yellow;
+}
+
+/* Información de contacto */
+.contact-info {
+    flex: 1;
+    min-width: 300px;
+    max-width: 450px;
+    text-align: left;
+}
+
+/* Mapa */
+.map-container {
+    margin-top: 20px;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 250px;
+    border-radius: 8px;
+}
+
+/* ==============================
+   AJUSTES DEL MENÚ
+============================== */
+.rd-navbar {
+    background-color: rgba(13, 19, 38, 0.95) !important;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.rd-navbar-nav > li > a {
+    color: rgba(255, 255, 255, 0.8) !important;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 10px 15px;
+    transition: color 0.3s ease-in-out, border-bottom 0.3s ease-in-out;
+}
+
+.rd-navbar-nav > li.active > a {
+    color: #FFA500 !important;
+    border-bottom: 3px solid #FFA500;
+}
+
+.rd-navbar-nav > li:hover > a {
+    color: #FFD700 !important;
+    border-bottom: 3px solid #FFD700;
+}
+
+/* Corrige el espaciado para que el título no se meta en el navbar */
+#contacto h2 {
+    margin-top: 30px;
+}
+
+/* ===========================
+   FOOTER 
+=========================== */
+footer {
+    padding-top: 50px;
+    padding-bottom: 30px;
+    background: #0d1326;
+    color: white;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: left;
+    max-width: 1100px;
+    margin: auto;
+    flex-wrap: wrap; /* Asegura que en pantallas pequeñas no se rompa */
+}
+
+.footer-brand {
+    flex: 1;
+    min-width: 300px;
+    text-align: left;
+}
+
+.footer-contact {
+    flex: 1;
+    min-width: 300px;
+    text-align: right;
+}
+
+/* Ajuste de responsividad en el footer */
+@media (max-width: 768px) {
+    .contact-wrapper {
+        flex-direction: column;
+        align-items: center;
+        transform: none; /* Elimina el desplazamiento en móviles */
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-brand,
+    .footer-contact {
+        text-align: center;
+    }
+}
