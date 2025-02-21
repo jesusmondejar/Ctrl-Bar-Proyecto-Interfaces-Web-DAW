@@ -25259,6 +25259,19 @@ box-shadow:
     }
 }
 
+/* Media Query para pantallas medianas (tablets) */
+@media (max-width: 1000px) {
+
+
+    .panda-img {
+        transform: scale(1.4); /* Reducir el tamaño del panda en tablets */
+    }
+
+    .switch-card {
+        transform: scale(0.9); /* Reducir el tamaño de la Switch en tablets */
+    }
+}
+
 /* Media Query para pantallas pequeñas (móviles) */
 @media (max-width: 768px) {
     .panda-img {
