@@ -10592,7 +10592,7 @@ fieldset[disabled] .swiper-slide-caption .pagination-classic > li + li:not(:last
 .rd-navbar-default.rd-navbar-fixed, .rd-navbar-floated.rd-navbar-fixed, .rd-navbar-default.rd-navbar-fixed .rd-navbar-panel, .rd-navbar-floated.rd-navbar-fixed .rd-navbar-panel {
 	height: 56px;
 }
-/* icono nav movil */
+
 .rd-navbar-default.rd-navbar-fixed .rd-navbar-toggle, .rd-navbar-floated.rd-navbar-fixed .rd-navbar-toggle {
 	position: fixed;
 	z-index: 17;
@@ -10606,7 +10606,7 @@ fieldset[disabled] .swiper-slide-caption .pagination-classic > li + li:not(:last
 	line-height: 48px;
 	text-align: center;
 	cursor: pointer;
-	color: #0d1326;
+	color: #fff;
 	background: none;
 	border: none;
 	outline: none;
@@ -10634,11 +10634,11 @@ fieldset[disabled] .swiper-slide-caption .pagination-classic > li + li:not(:last
 .rd-navbar-default.rd-navbar-fixed .rd-navbar-toggle span:after, .rd-navbar-floated.rd-navbar-fixed .rd-navbar-toggle span:after {
 	top: 8px;
 }
-/* ICONO NAV MOVIL */
+
 .rd-navbar-default.rd-navbar-fixed .rd-navbar-toggle span:after, .rd-navbar-floated.rd-navbar-fixed .rd-navbar-toggle span:after, .rd-navbar-default.rd-navbar-fixed .rd-navbar-toggle span:before, .rd-navbar-floated.rd-navbar-fixed .rd-navbar-toggle span:before, .rd-navbar-default.rd-navbar-fixed .rd-navbar-toggle span, .rd-navbar-floated.rd-navbar-fixed .rd-navbar-toggle span {
 	width: 24px;
 	height: 4px;
-	background-color: #0d1326;
+	background-color: #fff;
 	backface-visibility: hidden;
 	border-radius: 0;
 }
@@ -10724,22 +10724,19 @@ fieldset[disabled] .swiper-slide-caption .pagination-classic > li + li:not(:last
 	opacity: 1;
 	visibility: visible;
 }
-/* POSICION DEL LOGO CUANDO PASA DE PC A MOVIL*/
+
 @media (min-width: 480px) {
-	/* .rd-navbar-default.rd-navbar-fixed .rd-navbar-brand, .rd-navbar-floated.rd-navbar-fixed .rd-navbar-brand {
+	.rd-navbar-default.rd-navbar-fixed .rd-navbar-brand, .rd-navbar-floated.rd-navbar-fixed .rd-navbar-brand {
 		display: block;
 		position: fixed;
-		top: 25px;
+		top: 10px;
 		left: 50%;
 		width: auto;
-	} */
-
+	}
 }
 
 .rd-navbar-default.rd-navbar-transparent.rd-navbar-fixed .rd-navbar-panel, .rd-navbar-default.rd-navbar-dark.rd-navbar-fixed .rd-navbar-panel, .rd-navbar-floated.rd-navbar-dark.rd-navbar-fixed .rd-navbar-panel {
-	/* background: #110a06; */
-	/* Color barra movil */
-	background: #f2f2f2;
+	background: #110a06;
 	box-shadow: 0 3px 11px 0 #000;
 }
 
@@ -11495,10 +11492,9 @@ fieldset[disabled] .swiper-slide-caption .pagination-classic > li + li:not(:last
 	opacity: 1;
 	visibility: visible;
 }
-/* Color fuente nav */
+
 .rd-navbar-default.rd-navbar-transparent.rd-navbar-static .rd-navbar-nav > li a, .rd-navbar-default.rd-navbar-dark.rd-navbar-static .rd-navbar-nav > li a, .rd-navbar-floated.rd-navbar-dark.rd-navbar-static .rd-navbar-nav > li a {
-	/* color: #fff; */
-	color: #000;
+	color: #fff;
 }
 
 .rd-navbar-default.rd-navbar-light.rd-navbar-static .rd-navbar-nav > li a, .rd-navbar-floated.rd-navbar-light.rd-navbar-static .rd-navbar-nav > li a {
@@ -11841,7 +11837,7 @@ fieldset[disabled] .swiper-slide-caption .pagination-classic > li + li:not(:last
 	position: relative;
 	z-index: 3;
 }
-/* Icono buscar */
+
 .rd-navbar-default.rd-navbar-static .rd-navbar-search-toggle span, .rd-navbar-floated.rd-navbar-static .rd-navbar-search-toggle span {
 	display: inline-block;
 	position: relative;
@@ -11851,7 +11847,7 @@ fieldset[disabled] .swiper-slide-caption .pagination-classic > li + li:not(:last
 	line-height: 24px;
 	text-align: center;
 	cursor: pointer;
-	color: #0d1326; 
+	color: #fff;
 	background: none;
 	border: none;
 	outline: none;
@@ -12134,9 +12130,7 @@ fieldset[disabled] .swiper-slide-caption .pagination-classic > li + li:not(:last
 }
 
 .rd-navbar-default.rd-navbar-transparent.rd-navbar-static.rd-navbar--is-stuck, .rd-navbar-default.rd-navbar-dark.rd-navbar-static.rd-navbar--is-stuck {
-	/* Color nav pantallas */
-	/* background: #110a06; */
-	background: #f2f2f2;
+	background: #110a06;
 }
 
 .rd-navbar-default.rd-navbar-dark {

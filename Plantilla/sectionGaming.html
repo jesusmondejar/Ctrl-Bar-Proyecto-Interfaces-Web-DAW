@@ -12,387 +12,483 @@
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Dancing+Script:700%7CRaleway:300,400,600,700,900">
     <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/sectionGaming.css">
+    <link rel="stylesheet" href="css/fonts.css">
     <style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}</style>
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;700&family=Plus+Jakarta+Sans:wght@300;500;700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <!-- IE panel-->
-    <div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
+    <!-- Preloader (animación de carga) -->
     <div class="preloader">
-      <div class="preloader-body">
-        <div class="cssload-container">
-          <div class="cssload-speeding-wheel"></div>
+        <div class="preloader-body">
+            <div class="cssload-container">
+                <div class="cssload-speeding-wheel"></div>
+            </div>
         </div>
-      </div>
     </div>
-    <!-- Page-->
+
+    <!-- Página principal -->
     <div class="page text-center">
-      <!-- Page Head-->
-      <header class="page-head slider-menu-position">
-        <!-- RD Navbar Transparent-->
-        <div class="rd-navbar-wrap">
-          <nav class="rd-navbar rd-navbar-default rd-navbar-transparent" data-lg-auto-height="true" data-md-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-stick-up="true">
-            <div class="rd-navbar-inner">
-              <!-- RD Navbar Panel-->
-              <div class="rd-navbar-panel">
-                <!-- RD Navbar Toggle-->
-                <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar, .rd-navbar-nav-wrap"><span></span></button>
-                <!--Navbar Brand-->
-                <div class="rd-navbar-brand">
-                  <a href="index.html">
-                      <img style="width: 100px; max-width: 100%;  height: auto; display: block;" 
-                           src="images/Logo/LogoPandaCortado_transparent.png" 
-                           alt="Logo Panda sin fondo"/>
-                  </a>
-              </div>
-              </div>
-              <div class="rd-navbar-menu-wrap">
-                <div class="rd-navbar-nav-wrap">
-                  <div class="rd-navbar-mobile-scroll">
-                    <!--Navbar Brand Mobile-->
-                    <div class="rd-navbar-mobile-brand"><a href="index.html"><img style='margin-top: -5px;margin-left: -15px;' width='218' height='32' src='images/logo.png' alt=''/></a></div>
-                    <div class="form-search-wrap">
-                      <form class="form-search" action="#" method="GET">
-                        <div class="form-group">
-                          <label class="form-label form-search-label form-label-sm" for="rd-navbar-form-search-widget">Search</label>
-                          <input class="form-search-input input-sm form-control form-control-gray-lightest input-sm" id="rd-navbar-form-search-widget" type="text" name="s" autocomplete="off"/>
+        <!-- Cabecera de la página -->
+        <header class="page-head slider-menu-position">
+            <!-- Barra de navegación -->
+            <div class="rd-navbar-wrap">
+                <nav class="rd-navbar rd-navbar-default rd-navbar-transparent" data-lg-auto-height="true" data-md-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-stick-up="true">
+                    <div class="rd-navbar-inner">
+                        <!-- Panel de la barra de navegación -->
+                        <div class="rd-navbar-panel">
+                            <!-- Botón de toggle para móviles -->
+                            <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar, .rd-navbar-nav-wrap"><span></span></button>
+                            <!-- Logo de la marca -->
+                            <div class="rd-navbar-brand">
+                                <a href="index.html">
+                                    <img style="width: 100px; max-width: 100%; height: auto; display: block;" src="images/Logo/LogoPanda.png" alt="Logo Panda sin fondo"/>
+                                </a>
+                            </div>
                         </div>
-                        <button class="form-search-submit" type="submit"><span class="mdi mdi-magnify"></span></button>
-                      </form>
+                        <!-- Menú de navegación -->
+                        <div class="rd-navbar-menu-wrap">
+                            <div class="rd-navbar-nav-wrap">
+                                <div class="rd-navbar-mobile-scroll">
+                                    <!-- Logo de la marca para móviles -->
+                                    <div class="rd-navbar-mobile-brand">
+                                        <a href="index.html">
+                                            <img style='margin-top: -5px;margin-left: -15px;' width='218' height='32' src='images/Logo/LogoPandaCortado_transparent.png' alt=''/>
+                                        </a>
+                                    </div>
+                                    <!-- Formulario de búsqueda -->
+                                    <div class="form-search-wrap">
+                                        <form class="form-search" action="#" method="GET">
+                                            <div class="form-group">
+                                                <label class="form-label form-search-label form-label-sm" for="rd-navbar-form-search-widget">Search</label>
+                                                <input class="form-search-input input-sm form-control form-control-gray-lightest input-sm" id="rd-navbar-form-search-widget" type="text" name="s" autocomplete="off"/>
+                                            </div>
+                                            <button class="form-search-submit" type="submit"><span class="mdi mdi-magnify"></span></button>
+                                        </form>
+                                    </div>
+                                    <!-- Lista de enlaces de navegación -->
+                                    <ul class="rd-navbar-nav">
+                                        <li><a href="index.html"><span>Home</span></a></li>
+                                        <li class="active"><a href="sectionGaming.html"><span>Gaming</span></a></li>
+                                        <li><a href="about.html"><span>Carta</span></a></li>
+                                        <li><a href="typography.html"><span>Sobre nosotros</span></a></li>
+                                        <li><a href="contacts.html"><span>Contacto</span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Barra de búsqueda -->
+                            <div class="rd-navbar-search">
+                                <a class="rd-navbar-search-toggle mdi" data-rd-navbar-toggle=".rd-navbar-inner,.rd-navbar-search" href="#"><span></span></a>
+                                <form class="rd-navbar-search-form search-form-icon-right" action="#" method="GET">
+                                    <div class="form-group">
+                                        <label class="form-label" for="rd-navbar-search-form-input">Type and hit enter...</label>
+                                        <input class="rd-navbar-search-form-input form-control form-control-gray-lightest" id="rd-navbar-search-form-input" type="text" name="s" autocomplete="off"/>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
                     </div>
-                    <!-- RD Navbar Nav-->
-                    <ul class="rd-navbar-nav">
-                      <li><a href="index.html"><span>Home</span></a>
-                      </li>
-                      <li class="active"><a href="sectionGaming.html"><span>Gaming</span></a>
-                      </li>
-                      <li><a href="about.html"><span>Carta</span></a>
-                      </li>
-                      <li><a href="typography.html"><span>Sobre nosotros</span></a>
-                      </li>
-                      <li><a href="contacts.html"><span>Contacto</span></a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <!--RD Navbar Search-->
-                <div class="rd-navbar-search"><a class="rd-navbar-search-toggle mdi" data-rd-navbar-toggle=".rd-navbar-inner,.rd-navbar-search" href="#"><span></span></a>
-                  <form class="rd-navbar-search-form search-form-icon-right" action="#" method="GET">
-                    <div class="form-group">
-                      <label class="form-label" for="rd-navbar-search-form-input">Type and hit enter...</label>
-                      <input class="rd-navbar-search-form-input form-control form-control-gray-lightest" id="rd-navbar-search-form-input" type="text" name="s" autocomplete="off"/>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Contenido de la página -->
+        <div class="context-dark">
+            <!-- Sección de parallax con imagen de fondo -->
+            <div class="parallax-container" data-parallax-img="images/sectionGamingIMG/DALL·E_Gaming.webp">
+                <div class="parallax-content">
+                    <div class="container">
+                        <div class="section-110 d-flex flex-column justify-content-center align-items-center text-center">
+                            <div class="col-lg-8">
+                                <h1 class="font-accent"><span class="big">Gaming</span></h1>
+                                <ul class="list-inline list-inline-dashed p">
+                                    <li class="list-inline-item"><a href="index.html">Home</a></li>
+                                    <li class="list-inline-item">Gaming</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                  </form>
                 </div>
-              </div>
             </div>
-          </nav>
-        </div> 
-      </header>
-
-
-      <!-- Page Contents-->
-      <div class="context-dark">
-        <div class="parallax-container" data-parallax-img="images/sectionGamingIMG/DALL·E_Gaming.webp">
-          <div class="parallax-content">
-            <div class="container">
-              <div class="section-110 row justify-content-sm-center align-items-sm-center">
-                <div class="col-lg-8">
-                  <h1 class="font-accent"><span class="big">Gaming</span></h1>
-                  <ul class="list-inline list-inline-dashed p">
-                    <li class="list-inline-item"><a href="index.html">Home</a></li>
-                    <li class="list-inline-item">Gaming
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
 
-      
-
-
-      <main>
-          <div class="seven">
-          <h2>EVENTOS</h2>
-          </div>
-        <div class="triangle"></div>
-        <div class="px-10 py-20 font-ibmplex font-regular text-[#F2F2F2] bg-[#0D1326]  ">
-          <section class="grid grid-cols-1 md:grid-cols-2 gap-8 mx-auto w-full max-w-6xl">
-        
-            <!-- Evento 1 -->
-            <div class="flex flex-col">
-              <div class="flex flex-row p-6 bg-[#424859] rounded-xl shadow-md shadow-[#7D828C]/40 hover:shadow-lg hover:shadow-[#F2F2F2]/40 transition-shadow w-full min-h-[180px]">
-                <div class="flex flex-col items-center justify-center w-56 h-auto px-6 py-6 font-merriweather bg-[#0D1326] rounded-lg">
-                  <div class="text-base font-bold text-[#F2F2F2]">TODAY</div>
-                  <div class="text-4xl font-bold text-[#F2F2F2]">23:00</div>
-                </div>
-                <div class="flex flex-col justify-center pl-8 w-full">
-                  <h2 class="font-merriweather font-black text-2xl pb-4 text-[#F2F2F2]">LEC Winter 2025 - Playoffs</h2>
-                  <p class="text-lg text-[#F2F2F2]"> Equipos :</p>
-                  <p class="text-lg text-[#F2F2F2]">G2 Gozen | GIANTX GC | Karmine Corp GC | NASR Ignite | Lunar | ALTERNATE aTTaX Ruby | HEROIC Valkyries | SK Nebula | ZERANCE GC | BLVKHVND</p>
-                </div>
-              </div>
-              <div class="text-base bg-[#7D828C] p-4 rounded-b-xl shadow-md shadow-[#7D828C]/40 hover:cursor-pointer hover:bg-[#0D0D0D] hover:text-[#F2F2F2] text-center mt-2">
-                <span class="text-lg">+</span> Add to calendar
-              </div>
-            </div>
-        
-            <!-- Evento 2 -->
-            <div class="flex flex-col">
-              <div class="flex flex-row p-6 bg-[#424859] rounded-xl shadow-md shadow-[#7D828C]/40 hover:shadow-lg hover:shadow-[#F2F2F2]/40 transition-shadow w-full min-h-[180px]">
-                <div class="flex flex-col items-center justify-center w-56 h-auto px-6 py-6 font-merriweather bg-[#0D1326] rounded-lg">
-                  <div class="text-base font-bold text-[#F2F2F2]">TODAY</div>
-                  <div class="text-4xl font-bold text-[#F2F2F2]">23:00</div>
-                </div>
-                <div class="flex flex-col justify-center pl-8 w-full">
-                  <h2 class="font-merriweather font-black text-2xl pb-4 text-[#F2F2F2]">LEC Winter 2025 - Playoffs</h2>
-                  <p class="text-lg text-[#F2F2F2]"> Equipos :</p>
-                  <p class="text-lg text-[#F2F2F2]">G2 Gozen | GIANTX GC | Karmine Corp GC | NASR Ignite | Lunar | ALTERNATE aTTaX Ruby | HEROIC Valkyries | SK Nebula | ZERANCE GC | BLVKHVND</p>
-                </div>
-              </div>
-              <div class="text-base bg-[#7D828C] p-4 rounded-b-xl shadow-md shadow-[#7D828C]/40 hover:cursor-pointer hover:bg-[#0D0D0D] hover:text-[#F2F2F2] text-center mt-2">
-                <span class="text-lg">+</span> Add to calendar
-              </div>
-            </div>
-        
-            <!-- Evento 3 -->
-            <div class="flex flex-col">
-              <div class="flex flex-row p-6 bg-[#424859] rounded-xl shadow-md shadow-[#7D828C]/40 hover:shadow-lg hover:shadow-[#F2F2F2]/40 transition-shadow w-full min-h-[180px]">
-                <div class="flex flex-col items-center justify-center w-56 h-auto px-6 py-6 font-merriweather bg-[#0D1326] rounded-lg">
-                  <div class="text-base font-bold text-[#F2F2F2]">18 - 19 FEB</div>
-                  <div class="text-4xl font-bold text-[#F2F2F2]">09:00</div>
-                </div>
-                <div class="flex flex-col justify-center pl-8 w-full">
-                  <h2 class="font-merriweather font-black text-2xl pb-4 text-[#F2F2F2]">Darkness Park in Randers</h2>
-                  <p class="text-lg text-[#F2F2F2]"> Equipos :</p>
-                  <p class="text-lg text-[#F2F2F2]">G2 Gozen | GIANTX GC | Karmine Corp GC | NASR Ignite | Lunar | ALTERNATE aTTaX Ruby | HEROIC Valkyries | SK Nebula | ZERANCE GC | BLVKHVND</p>
-                </div>
-              </div>
-              <div class="text-base bg-[#7D828C] p-4 rounded-b-xl shadow-md shadow-[#7D828C]/40 hover:cursor-pointer hover:bg-[#0D0D0D] hover:text-[#F2F2F2] text-center mt-2">
-                <span class="text-lg">+</span> Add to calendar
-              </div>
-            </div>
-        
-            <!-- Evento 4 -->
-            <div class="flex flex-col">
-              <div class="flex flex-row p-6 bg-[#424859] rounded-xl shadow-md shadow-[#7D828C]/40 hover:shadow-lg hover:shadow-[#F2F2F2]/40 transition-shadow w-full min-h-[180px]">
-                <div class="flex flex-col items-center justify-center w-56 h-auto px-6 py-6 font-merriweather bg-[#0D1326] rounded-lg">
-                  <div class="text-base font-bold text-[#F2F2F2]">TODAY</div>
-                  <div class="text-4xl font-bold text-[#F2F2F2]">23:00</div>
-                </div>
-                <div class="flex flex-col justify-center pl-8 w-full">
-                  <h2 class="font-merriweather font-black text-2xl pb-4 text-[#F2F2F2]">LEC Winter 2025 - Playoffs</h2>
-                  <p class="text-lg text-[#F2F2F2]"> Equipos :</p>
-                  <p class="text-lg text-[#F2F2F2]">G2 Gozen | GIANTX GC | Karmine Corp GC | NASR Ignite | Lunar | ALTERNATE aTTaX Ruby | HEROIC Valkyries | SK Nebula | ZERANCE GC | BLVKHVND</p>
-                </div>
-              </div>
-              <div class="text-base bg-[#7D828C] p-4 rounded-b-xl shadow-md shadow-[#7D828C]/40 hover:cursor-pointer hover:bg-[#0D0D0D] hover:text-[#F2F2F2] text-center mt-2">
-                <span class="text-lg">+</span> Add to calendar
-              </div>
-            </div>
-        
-          </section>
-        </div>
-        
-        
-        
-        
-
-
-
-
-
-
-        <div class="seven">
-                <h2>tORNEOS</h2>
-        </div>
-        <div class="triangle"></div>
-        <div class="DivTorneos" style="background-color: #0d1326">
-          <div class="container" style="padding-top: 80px;">
-          <!-- FILTROS -->
-            <aside class="filters">
-                <h3>FILTROS</h3>
-                <p><strong>SE HAN ENCONTRADO <span id="torneos-count">47</span> TORNEOS</strong></p>
+        <!-- Contenido principal -->
+        <main>
+            <!-- Sección de eventos -->
+            <div class="px-10 py-20 font-ibmplex font-regular text-[#F2F2F2] bg-[#000000]">
+                <section class="wrapper">
+                    <div class="top">EVENTOS</div>
+                    <div class="bottom" aria-hidden="true">EVENTOS</div>
+                  </section>
                 
-                <label>Búsqueda</label>
-                <input type="text" id="search" placeholder="🔍 Buscar torneo..." onkeyup="filtrarTorneos()">
-                <label>Fechas de inicio</label>
-                <div class="date-range">
-                    <input type="date" id="start-date">
-                    <span>a</span>
-                    <input type="date" id="end-date">
-                </div>
-                <label>Juegos</label>
-                <select id="game-filter">
-                    <option value="">No hay selección</option>
-                    <option value="FIFA">FIFA</option>
-                    <option value="Teamfight Tactics">league of legends</option>
-                </select>
-
-                <label>Plataformas</label>
-                <select id="platform-filter">
-                    <option value="">No hay selección</option>
-                    <option value="PS4">PS5</option>
-                    <option value="PC">PC</option>
-                </select>
-
-                <label>Modo</label>
-                <select id="mode-filter">
-                    <option value="Todos">Todos</option>
-                </select>
-
-                <button>APLICAR FILTROS</button>
-            </aside>
-
-            <!-- TORNEOS -->
-            <section class="torneos-grid " id="torneosContainer">
-                    <article class="torneo-card finalizado">
-                        <img src="images/sectionGamingIMG/Fifa25.jpg" alt="Torneo FIFA 25">
-                        <div class="torneo-info">
-                            <span class="estado">FINALIZADO</span>
-                            <h3>Torneo FIFA 20 - Gratis</h3>
-                            <p>🎮 <strong>Juego:</strong> FIFA</p>
-                            <p>🖥️ <strong>Plataforma:</strong> PS5</p>
-                            <p>👥 <strong>Plazas:</strong> 16 plazas</p>
-                            <p>⏰ <strong>Hora:</strong> 18:30H | <strong>Check-in:</strong> 18:00H</p>
-                            <a href="#" class="torneos-btn">Más Información</a>
+                <!-- <div class="seven"><h2>EVENTOS</h2></div>  
+                <div class="one">
+                    <h2>PROXIMOS EVENTOS</h2>
+                  </div> -->
+                  
+                <section class="grid grid-cols-1 md:grid-cols-2 gap-8 mx-auto w-full max-w-6xl">
+                    <!-- Evento 1 -->
+                    <div class="flex flex-col">
+                        <div class="flex flex-row p-6 bg-[#424859] rounded-xl shadow-md shadow-[#7D828C]/40 hover:shadow-lg hover:shadow-[#F2F2F2]/40 transition-shadow w-full min-h-[180px]">
+                            <div class="flex flex-col items-center justify-center w-56 h-auto px-6 py-6 font-merriweather bg-[#0D1326] rounded-lg">
+                                <div class="text-base font-bold text-[#F2F2F2]">TODAY</div>
+                                <div class="text-4xl font-bold text-[#F2F2F2]">23:00</div>
+                            </div>
+                            <div class="flex flex-col justify-center pl-8 w-full">
+                                <h2 class="font-merriweather font-black text-2xl pb-4 text-[#F2F2F2]">LEC Winter 2025 - Playoffs</h2>
+                                <p class="text-lg text-[#F2F2F2]"> Equipos :</p>
+                                <p class="text-lg text-[#F2F2F2]">G2 Gozen | GIANTX GC | Karmine Corp GC | NASR Ignite | Lunar | ALTERNATE aTTaX Ruby | HEROIC Valkyries | SK Nebula | ZERANCE GC | BLVKHVND</p>
+                            </div>
                         </div>
-                    </article>
-                    <article class="torneo-card finalizado">
-                      <img src="images/sectionGamingIMG/cod.jpg" alt="Torneo FIFA 25">
-                      <div class="torneo-info">
-                          <span class="estado">FINALIZADO</span>
-                          <h3>Torneo FIFA 20 - Gratis</h3>
-                          <p>🎮 <strong>Juego:</strong> FIFA</p>
-                          <p>🖥️ <strong>Plataforma:</strong> PS5</p>
-                          <p>👥 <strong>Plazas:</strong> 16 plazas</p>
-                          <p>⏰ <strong>Hora:</strong> 18:30H | <strong>Check-in:</strong> 18:00H</p>
-                          <a href="#" class="torneos-btn">Más Información</a>
-                      </div>
-                  </article>
-
-                    <article class="torneo-card finalizado">
-                        <img src="images/sectionGamingIMG/lol.jpg" alt="Torneo Teamfight Tactics">
-                        <div class="torneo-info">
-                            <span class="estado">FINALIZADO</span>
-                            <h3>Torneo Online TFT - Gratis</h3>
-                            <p>🎮 <strong>Juego:</strong> league of legends</p>
-                            <p>🖥️ <strong>Plataforma:</strong> PC</p>
-                            <p>👥 <strong>Plazas:</strong> 64 plazas</p>
-                            <p>⏰ <strong>Hora:</strong> 16:15H | <strong>Check-in:</strong> 16:00H</p>
-                            <a href="#" class="torneos-btn">Más Información</a>
+                        <div class="text-base bg-[#7D828C] p-4 rounded-b-xl shadow-md shadow-[#7D828C]/40 hover:cursor-pointer hover:bg-[#0D0D0D] hover:text-[#F2F2F2] text-center mt-2">
+                            <span class="text-lg">+</span> Add to calendar
                         </div>
-                    </article>
-                    <article class="torneo-card finalizado">
-                      <img src="images/sectionGamingIMG/lol.jpg" alt="Torneo Teamfight Tactics">
-                      <div class="torneo-info">
-                          <span class="estado">FINALIZADO</span>
-                          <h3>Torneo Online TFT - Gratis</h3>
-                          <p>🎮 <strong>Juego:</strong> league of legends</p>
-                          <p>🖥️ <strong>Plataforma:</strong> PC</p>
-                          <p>👥 <strong>Plazas:</strong> 64 plazas</p>
-                          <p>⏰ <strong>Hora:</strong> 16:15H | <strong>Check-in:</strong> 16:00H</p>
-                          <a href="#" class="torneos-btn">Más Información</a>
-                      </div>
-                  </article>
-                  <article class="torneo-card finalizado">
-                    <img src="images/sectionGamingIMG/lol.jpg" alt="Torneo Teamfight Tactics">
-                    <div class="torneo-info">
-                        <span class="estado">FINALIZADO</span>
-                        <h3>Torneo Online TFT - Gratis</h3>
-                        <p>🎮 <strong>Juego:</strong> league of legends</p>
-                        <p>🖥️ <strong>Plataforma:</strong> PC</p>
-                        <p>👥 <strong>Plazas:</strong> 64 plazas</p>
-                        <p>⏰ <strong>Hora:</strong> 16:15H | <strong>Check-in:</strong> 16:00H</p>
-                        <a href="#" class="torneos-btn">Más Información</a>
                     </div>
-                </article>
-                <article class="torneo-card finalizado">
-                  <img src="images/sectionGamingIMG/lol.jpg" alt="Torneo Teamfight Tactics">
-                  <div class="torneo-info">
-                      <span class="estado">FINALIZADO</span>
-                      <h3>Torneo Online TFT - Gratis</h3>
-                      <p>🎮 <strong>Juego:</strong> league of legends</p>
-                      <p>🖥️ <strong>Plataforma:</strong> PC</p>
-                      <p>👥 <strong>Plazas:</strong> 64 plazas</p>
-                      <p>⏰ <strong>Hora:</strong> 16:15H | <strong>Check-in:</strong> 16:00H</p>
-                      <a href="#" class="torneos-btn">Más Información</a>
-                  </div>
-              </article>  
+
+                    <!-- Evento 2 (similar al Evento 1) -->
+                    <div class="flex flex-col">
+                        <div class="flex flex-row p-6 bg-[#424859] rounded-xl shadow-md shadow-[#7D828C]/40 hover:shadow-lg hover:shadow-[#F2F2F2]/40 transition-shadow w-full min-h-[180px]">
+                            <div class="flex flex-col items-center justify-center w-56 h-auto px-6 py-6 font-merriweather bg-[#0D1326] rounded-lg">
+                                <div class="text-base font-bold text-[#F2F2F2]">TODAY</div>
+                                <div class="text-4xl font-bold text-[#F2F2F2]">23:00</div>
+                            </div>
+                            <div class="flex flex-col justify-center pl-8 w-full">
+                                <h2 class="font-merriweather font-black text-2xl pb-4 text-[#F2F2F2]">LEC Winter 2025 - Playoffs</h2>
+                                <p class="text-lg text-[#F2F2F2]"> Equipos :</p>
+                                <p class="text-lg text-[#F2F2F2]">G2 Gozen | GIANTX GC | Karmine Corp GC | NASR Ignite | Lunar | ALTERNATE aTTaX Ruby | HEROIC Valkyries | SK Nebula | ZERANCE GC | BLVKHVND</p>
+                            </div>
+                        </div>
+                        <div class="text-base bg-[#7D828C] p-4 rounded-b-xl shadow-md shadow-[#7D828C]/40 hover:cursor-pointer hover:bg-[#0D0D0D] hover:text-[#F2F2F2] text-center mt-2">
+                            <span class="text-lg">+</span> Add to calendar
+                        </div>
+                    </div>
+
+                    <!-- Evento 3 (similar al Evento 1) -->
+                    <div class="flex flex-col">
+                        <div class="flex flex-row p-6 bg-[#424859] rounded-xl shadow-md shadow-[#7D828C]/40 hover:shadow-lg hover:shadow-[#F2F2F2]/40 transition-shadow w-full min-h-[180px]">
+                            <div class="flex flex-col items-center justify-center w-56 h-auto px-6 py-6 font-merriweather bg-[#0D1326] rounded-lg">
+                                <div class="text-base font-bold text-[#F2F2F2]">18 - 19 FEB</div>
+                                <div class="text-4xl font-bold text-[#F2F2F2]">09:00</div>
+                            </div>
+                            <div class="flex flex-col justify-center pl-8 w-full">
+                                <h2 class="font-merriweather font-black text-2xl pb-4 text-[#F2F2F2]">Darkness Park in Randers</h2>
+                                <p class="text-lg text-[#F2F2F2]"> Equipos :</p>
+                                <p class="text-lg text-[#F2F2F2]">G2 Gozen | GIANTX GC | Karmine Corp GC | NASR Ignite | Lunar | ALTERNATE aTTaX Ruby | HEROIC Valkyries | SK Nebula | ZERANCE GC | BLVKHVND</p>
+                            </div>
+                        </div>
+                        <div class="text-base bg-[#7D828C] p-4 rounded-b-xl shadow-md shadow-[#7D828C]/40 hover:cursor-pointer hover:bg-[#0D0D0D] hover:text-[#F2F2F2] text-center mt-2">
+                            <span class="text-lg">+</span> Add to calendar
+                        </div>
+                    </div>
+
+                    <!-- Evento 4 (similar al Evento 1) -->
+                    <div class="flex flex-col">
+                        <div class="flex flex-row p-6 bg-[#424859] rounded-xl shadow-md shadow-[#7D828C]/40 hover:shadow-lg hover:shadow-[#F2F2F2]/40 transition-shadow w-full min-h-[180px]">
+                            <div class="flex flex-col items-center justify-center w-56 h-auto px-6 py-6 font-merriweather bg-[#0D1326] rounded-lg">
+                                <div class="text-base font-bold text-[#F2F2F2]">TODAY</div>
+                                <div class="text-4xl font-bold text-[#F2F2F2]">23:00</div>
+                            </div>
+                            <div class="flex flex-col justify-center pl-8 w-full">
+                                <h2 class="font-merriweather font-black text-2xl pb-4 text-[#F2F2F2]">LEC Winter 2025 - Playoffs</h2>
+                                <p class="text-lg text-[#F2F2F2]"> Equipos :</p>
+                                <p class="text-lg text-[#F2F2F2]">G2 Gozen | GIANTX GC | Karmine Corp GC | NASR Ignite | Lunar | ALTERNATE aTTaX Ruby | HEROIC Valkyries | SK Nebula | ZERANCE GC | BLVKHVND</p>
+                            </div>
+                        </div>
+                        <div class="text-base bg-[#7D828C] p-4 rounded-b-xl shadow-md shadow-[#7D828C]/40 hover:cursor-pointer hover:bg-[#0D0D0D] hover:text-[#F2F2F2] text-center mt-2">
+                            <span class="text-lg">+</span> Add to calendar
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Sección de torneos -->
+            <div class="DivTorneos" style="background-color: #000000">
+                <section class="wrapper">
+                    <div class="top">TORNEOS</div>
+                    <div class="bottom" aria-hidden="true">TORNEOS</div>
+                  </section>
+                <div class="container" style="padding-top: 80px;">
+                    <!-- Filtros de búsqueda -->
+                    <aside class="filters">
+                        <h3>FILTROS</h3>
+                        <p><strong>SE HAN ENCONTRADO <span id="torneos-count">47</span> TORNEOS</strong></p>
+                        <label>Búsqueda</label>
+                        <input type="text" id="search" placeholder="🔍 Buscar torneo..." onkeyup="filtrarTorneos()">
+                        <label>Fechas de inicio</label>
+                        <div class="date-range">
+                            <input type="date" id="start-date">
+                            <span>a</span>
+                            <input type="date" id="end-date">
+                        </div>
+                        <label>Juegos</label>
+                        <select id="game-filter">
+                            <option value="">No hay selección</option>
+                            <option value="FIFA">FIFA</option>
+                            <option value="Teamfight Tactics">league of legends</option>
+                        </select>
+                        <label>Plataformas</label>
+                        <select id="platform-filter">
+                            <option value="">No hay selección</option>
+                            <option value="PS4">PS5</option>
+                            <option value="PC">PC</option>
+                        </select>
+                        <label>Modo</label>
+                        <select id="mode-filter">
+                            <option value="Todos">Todos</option>
+                        </select>
+                        <button>APLICAR FILTROS</button>
+                    </aside>
+
+                    <!-- Lista de torneos -->
+                    <section class="torneos-grid" id="torneosContainer">
+                        <!-- Tarjeta de torneo 1 -->
+                        <article class="torneo-card finalizado">
+                            <img src="images/sectionGamingIMG/Fifa25.jpg" alt="Torneo FIFA 25">
+                            <div class="torneo-info">
+                                <span class="estado">FINALIZADO</span>
+                                <h3>Torneo FIFA 20 - Gratis</h3>
+                                <p>🎮 <strong>Juego:</strong> FIFA</p>
+                                <p>🖥️ <strong>Plataforma:</strong> PS5</p>
+                                <p>👥 <strong>Plazas:</strong> 16 plazas</p>
+                                <p>⏰ <strong>Hora:</strong> 18:30H | <strong>Check-in:</strong> 18:00H</p>
+                                <a href="#" class="torneos-btn">Más Información</a>
+                            </div>
+                        </article>
+
+                        <!-- Tarjeta de torneo 2 (similar a la anterior) -->
+                        <article class="torneo-card finalizado">
+                            <img src="images/sectionGamingIMG/cod.jpg" alt="Torneo FIFA 25">
+                            <div class="torneo-info">
+                                <span class="estado">FINALIZADO</span>
+                                <h3>Torneo FIFA 20 - Gratis</h3>
+                                <p>🎮 <strong>Juego:</strong> FIFA</p>
+                                <p>🖥️ <strong>Plataforma:</strong> PS5</p>
+                                <p>👥 <strong>Plazas:</strong> 16 plazas</p>
+                                <p>⏰ <strong>Hora:</strong> 18:30H | <strong>Check-in:</strong> 18:00H</p>
+                                <a href="#" class="torneos-btn">Más Información</a>
+                            </div>
+                        </article>
+
+                        <!-- Tarjeta de torneo 3 (similar a la anterior) -->
+                        <article class="torneo-card finalizado">
+                            <img src="images/sectionGamingIMG/lol.jpg" alt="Torneo Teamfight Tactics">
+                            <div class="torneo-info">
+                                <span class="estado">FINALIZADO</span>
+                                <h3>Torneo Online TFT - Gratis</h3>
+                                <p>🎮 <strong>Juego:</strong> league of legends</p>
+                                <p>🖥️ <strong>Plataforma:</strong> PC</p>
+                                <p>👥 <strong>Plazas:</strong> 64 plazas</p>
+                                <p>⏰ <strong>Hora:</strong> 16:15H | <strong>Check-in:</strong> 16:00H</p>
+                                <a href="#" class="torneos-btn">Más Información</a>
+                            </div>
+                        </article>
+
+                        <!-- Tarjeta de torneo 4 (similar a la anterior) -->
+                        <article class="torneo-card finalizado">
+                            <img src="images/sectionGamingIMG/lol.jpg" alt="Torneo Teamfight Tactics">
+                            <div class="torneo-info">
+                                <span class="estado">FINALIZADO</span>
+                                <h3>Torneo Online TFT - Gratis</h3>
+                                <p>🎮 <strong>Juego:</strong> league of legends</p>
+                                <p>🖥️ <strong>Plataforma:</strong> PC</p>
+                                <p>👥 <strong>Plazas:</strong> 64 plazas</p>
+                                <p>⏰ <strong>Hora:</strong> 16:15H | <strong>Check-in:</strong> 16:00H</p>
+                                <a href="#" class="torneos-btn">Más Información</a>
+                            </div>
+                        </article>
+
+                        <!-- Tarjeta de torneo 5 (similar a la anterior) -->
+                        <article class="torneo-card finalizado">
+                            <img src="images/sectionGamingIMG/lol.jpg" alt="Torneo Teamfight Tactics">
+                            <div class="torneo-info">
+                                <span class="estado">FINALIZADO</span>
+                                <h3>Torneo Online TFT - Gratis</h3>
+                                <p>🎮 <strong>Juego:</strong> league of legends</p>
+                                <p>🖥️ <strong>Plataforma:</strong> PC</p>
+                                <p>👥 <strong>Plazas:</strong> 64 plazas</p>
+                                <p>⏰ <strong>Hora:</strong> 16:15H | <strong>Check-in:</strong> 16:00H</p>
+                                <a href="#" class="torneos-btn">Más Información</a>
+                            </div>
+                        </article>
+
+                        <!-- Tarjeta de torneo 6 (similar a la anterior) -->
+                        <article class="torneo-card finalizado">
+                            <img src="images/sectionGamingIMG/lol.jpg" alt="Torneo Teamfight Tactics">
+                            <div class="torneo-info">
+                                <span class="estado">FINALIZADO</span>
+                                <h3>Torneo Online TFT - Gratis</h3>
+                                <p>🎮 <strong>Juego:</strong> league of legends</p>
+                                <p>🖥️ <strong>Plataforma:</strong> PC</p>
+                                <p>👥 <strong>Plazas:</strong> 64 plazas</p>
+                                <p>⏰ <strong>Hora:</strong> 16:15H | <strong>Check-in:</strong> 16:00H</p>
+                                <a href="#" class="torneos-btn">Más Información</a>
+                            </div>
+                        </article>
+                    </section>
+                </div>
+            </div>
+
+            <!-- Sección de consolas -->
+            <div>
+                <div class="DivConsolas" style="background-color: #000000">
+                    <section class="wrapper">
+                        <div class="top">Consolas</div>
+                        <div class="bottom" aria-hidden="true">Consolas</div>
+                      </section>
+                    <div class="container">
+                        <div class="consolas-grid">
+                            <!-- Tarjeta de consola 1 -->
+                            <div class="consola-card">
+                                <img src="images/sectionGamingIMG/ps5.jpeg" alt="PlayStation 5" class="consola-img">
+                                <h3 class="consola-title">PlayStation 5</h3>
+                                <p class="consola-price">💰 <strong>Precio por hora:</strong> 5€</p>
+                                <p class="consola-games">🎮 <strong>Juegos Disponibles:</strong> FIFA 24, Call of Duty, Spider-Man 2, Mortal Kombat 1</p>
+                                <a href="#" class="reservar-btn">Reservar Ahora</a>
+                            </div>
+
+                            <!-- Tarjeta de consola 2 (similar a la anterior) -->
+                            <div class="consola-card">
+                                <img src="images/sectionGamingIMG/xbox.avif" alt="Xbox Series X" class="consola-img">
+                                <h3 class="consola-title">Xbox Series X</h3>
+                                <p class="consola-price">💰 <strong>Precio por hora:</strong> 4.50€</p>
+                                <p class="consola-games">🎮 <strong>Juegos Disponibles:</strong> Halo Infinite, Forza Horizon 5, Gears 5, Starfield</p>
+                                <a href="#" class="reservar-btn">Reservar Ahora</a>
+                            </div>
+
+                            <!-- Tarjeta de consola 3 (similar a la anterior) -->
+                            <div class="consola-card">
+                                <img src="images/sectionGamingIMG/pc.jpg" alt="PC Gaming" class="consola-img">
+                                <h3 class="consola-title">PC Gaming</h3>
+                                <p class="consola-price">💰 <strong>Precio por hora:</strong> 6€</p>
+                                <p class="consola-games">🎮 <strong>Juegos Disponibles:</strong> League of Legends, Valorant, CS2, Fortnite</p>
+                                <a href="#" class="reservar-btn">Reservar Ahora</a>
+                            </div>
+
+                            <!-- Tarjeta de consola 4 (similar a la anterior) -->
+                            <div class="consola-card">
+                                <img src="images/sectionGamingIMG/Nintendo-Switch-Oled.jpg" alt="Nintendo Switch" class="consola-img">
+                                <h3 class="consola-title">Nintendo Switch</h3>
+                                <p class="consola-price">💰 <strong>Precio por hora:</strong> 3.50€</p>
+                                <p class="consola-games">🎮 <strong>Juegos Disponibles:</strong> Mario Kart 8, Super Smash Bros, Zelda TOTK, Pokémon Scarlet</p>
+                                <a href="#" class="reservar-btn">Reservar Ahora</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="bg-black  py-16">
+                <!-- TÍTULO CENTRADO Y ARRIBA DE LOS PLANES -->
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold text-white">Consolas</h2>
+                </div>
+                <div class="max-w-7xl mx-auto px-6">
+                   
+            
+                    <!-- GRID DE LOS PLANES -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                        <!-- Plan 1 -->
+                        <div class="bg-gray-800 rounded-xl shadow-lg p-8 text-white transform transition hover:scale-105">
+                            <h3 class="text-2xl font-bold text-center text-white">PC Gaming</h3>
+                            <p class="text-center text-gray-400">PC</p>
+                            <img src="images/sectionGamingIMG/pc.png" class="mx-auto my-6 w-100">
+                            
+                            <ul class="space-y-3 text-gray-300">
+                                <li><i class="fa fa-check text-green-400"></i> League of Legends</s></li>
+                                <li><i class="fa fa-check text-green-400"></i> call of Duty <s></s></li>
+                                <li><i class="fa fa-check text-green-400"></i>Valorant</li>
+                                <li><i class="fa fa-check text-green-400"></i> CS2</li>
+                            </ul>
+                            
+                            <h3 class="text-center text-3xl font-semibold my-6 text-white">6 €</h3>
+            
+                            <button class="w-full bg-blue-500 text-white py-3 rounded-lg hover:bg-blue-600 transition">
+                                Reservar
+                            </button>
+                        </div>
+            
+                        <!-- Plan Destacado -->
+                        <div class="bg-blue-700 rounded-xl shadow-xl p-8 text-white transform transition hover:scale-105 relative">
+                            <span class="absolute top-0 left-1/2 transform -translate-x-1/2 bg-yellow-400 text-black px-4 py-1 rounded-b-lg font-bold">Best Value</span>
+                            <h3 class="text-2xl font-bold text-center text-white">PlayStation 5</h3>
+                            <p class="text-center text-gray-200">Sony</p>
+                            <img src="images/sectionGamingIMG/ps5.png" class="mx-auto my-6 w-100">
+                            
+                            <ul class="space-y-3 text-gray-300">
+                                <li><i class="fa fa-check text-green-400"></i>  FIFA 25 <s></s></li>
+                                <li><i class="fa fa-check text-green-400"></i> Call of Duty<s></s></li>
+                                <li><i class="fa fa-check text-green-400"></i> Spider-Man 2</li>
+                                <li><i class="fa fa-check text-green-400"></i>Mortal Kombat 1</li>
+                            </ul>
+                            
+                            <h3 class="text-center text-3xl font-semibold my-6 text-white">5€</h3>
+            
+                            <button class="w-full bg-yellow-400 text-black py-3 rounded-lg hover:bg-yellow-500 transition">
+                                ADD TO CART
+                            </button>
+                        </div>
+            
+                        <!-- Plan 3 -->
+                        <div class="bg-gray-800 rounded-xl shadow-lg p-8 text-white transform transition hover:scale-105">
+                            <h3 class="text-2xl font-bold text-center text-white">Xbox Series X</h3>
+                            <p class="text-center text-gray-400">Microsoft</p>
+                            <img src="images/sectionGamingIMG/SerieX.png" class="mx-auto my-6 w-100">
+                            
+                            <ul class="space-y-3 text-gray-300">
+                                <li><i class="fa fa-check text-green-400"></i>Halo Infinite<s></s></li>
+                                <li><i class="fa fa-check text-green-400"></i> Forza Horizon 5 <s></s></li>
+                                <li><i class="fa fa-check text-green-400"></i>  Starfield</li>
+                                <li><i class="fa fa-check text-green-400"></i> SMITE 2</li>
+                                <li><i class="fa fa-check text-green-400"></i> Call of Duty</li>
+                            </ul>
+                            
+                            <h3 class="text-center text-3xl font-semibold my-6 text-white">4,50 €</h3>
+            
+                            <button class="w-full bg-green-500 text-white py-3 rounded-lg hover:bg-green-600 transition">
+                                Reservar
+                            </button>
+                        </div>
+            
+                        <!-- Nuevo Plan -->
+                        <div class="bg-gray-800 rounded-xl shadow-lg p-8 text-white transform transition hover:scale-105">
+                            <h3 class="text-2xl font-bold text-center text-white">Nintendo Switch</h3>
+                            <p class="text-center text-gray-400">Nintento</p>
+                            <img src="images/sectionGamingIMG/Nintento.png" class="mx-auto my-6 w-100">
+                            
+                            <ul class="space-y-3 text-gray-300">
+                                <li><i class="fa fa-check text-green-400"></i> Mario Kart 8<s></s></li>
+                                <li><i class="fa fa-check text-green-400"></i>  Super Smash Bros<s></s></li>
+                                <li><i class="fa fa-check text-green-400"></i> Zelda TOTK</li>
+                                <li><i class="fa fa-check text-green-400"></i> Pokémon Scarlet</li>
+                            </ul>
+                            
+                            <h3 class="text-center text-3xl font-semibold my-6 text-white">$299</h3>
+            
+                            <button class="w-full bg-purple-500 text-white py-3 rounded-lg hover:bg-purple-600 transition">
+                                ADD TO CART
+                            </button>
+                        </div>
+            
+                    </div>
+                </div>
             </section>
-          </div>
-        </div>
+            
+            
+        </main>
 
-         <!-- RAUL SECTION -->
-        <div class="seven">
-          <h2>CONSOLAS</h2>
-      </div>
-      <div class="triangle"></div>
-      <div class="consolas-section">
-          <div class="container">
-              <div class="consolas-grid">
-                  <div class="consola-card">
-                      <img src="images/sectionGamingIMG/ps5.jpeg" alt="PlayStation 5">
-                      <h3>PlayStation 5</h3>
-                      <p>💰 <strong>Precio por hora:</strong> 5€</p>
-                      <p>🎮 <strong>Juegos Disponibles:</strong> FIFA 24, Call of Duty, Spider-Man 2, Mortal Kombat 1</p>
-                      <a href="#" class="reservar-btn">Reservar Ahora</a>
-                  </div>
-                  <div class="consola-card">
-                      <img src="images/sectionGamingIMG/xbox.avif" alt="Xbox Series X">
-                      <h3>Xbox Series X</h3>
-                      <p>💰 <strong>Precio por hora:</strong> 4.50€</p>
-                      <p>🎮 <strong>Juegos Disponibles:</strong> Halo Infinite, Forza Horizon 5, Gears 5, Starfield</p>
-                      <a href="#" class="reservar-btn">Reservar Ahora</a>
-                  </div>
-                  <div class="consola-card">
-                      <img src="images/sectionGamingIMG/pc.jpg" alt="PC Gaming">
-                      <h3>PC Gaming</h3>
-                      <p>💰 <strong>Precio por hora:</strong> 6€</p>
-                      <p>🎮 <strong>Juegos Disponibles:</strong> League of Legends, Valorant, CS2, Fortnite</p>
-                      <a href="#" class="reservar-btn">Reservar Ahora</a>
-                  </div>
-                  <div class="consola-card">
-                      <img src="images/sectionGamingIMG/Nintendo-Switch-Oled.jpg" alt="Nintendo Switch">
-                      <h3>Nintendo Switch</h3>
-                      <p>💰 <strong>Precio por hora:</strong> 3.50€</p>
-                      <p>🎮 <strong>Juegos Disponibles:</strong> Mario Kart 8, Super Smash Bros, Zelda TOTK, Pokémon Scarlet</p>
-                      <a href="#" class="reservar-btn">Reservar Ahora</a>
-                  </div>
-              </div>
-          </div>
-      </div>
-      
-
-
-
-      </main>
-  
-
-<!-- FIN DE MI SECCIÓN -->
-
-
-
-        
-
-      <footer class="section-relative section-top-66 section-bottom-34 page-footer bg-gray-base context-dark">
-       
-      </footer>
+        <!-- Pie de página -->
+        <footer class="section-relative section-top-66 section-bottom-34 page-footer bg-gray-base context-dark">
+            <!-- Contenido del pie de página -->
+        </footer>
     </div>
 
-    <!-- Global Mailform Output-->
+    <!-- Global Mailform Output (para mensajes de formulario) -->
     <div class="snackbars" id="form-output-global"></div>
-    <!-- Java script-->
 
+    <!-- Scripts -->
     <script src="js/core.min.js"></script>
     <script src="js/script.js"></script>
-  </body>
+</body>
 </html>
