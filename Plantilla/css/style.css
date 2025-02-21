@@ -10736,8 +10736,7 @@ fieldset[disabled] .swiper-slide-caption .pagination-classic > li + li:not(:last
 }
 
 .rd-navbar-default.rd-navbar-transparent.rd-navbar-fixed .rd-navbar-panel, .rd-navbar-default.rd-navbar-dark.rd-navbar-fixed .rd-navbar-panel, .rd-navbar-floated.rd-navbar-dark.rd-navbar-fixed .rd-navbar-panel {
-	background: #110a06;
-	box-shadow: 0 3px 11px 0 #000;
+	background: transparent;
 }
 
 .rd-navbar-default.rd-navbar-transparent.rd-navbar-fixed .rd-navbar-cart, .rd-navbar-default.rd-navbar-dark.rd-navbar-fixed .rd-navbar-cart, .rd-navbar-floated.rd-navbar-dark.rd-navbar-fixed .rd-navbar-cart {
@@ -10847,7 +10846,7 @@ fieldset[disabled] .swiper-slide-caption .pagination-classic > li + li:not(:last
 }
 
 .rd-navbar-sidebar-toggle.rd-navbar-dark.rd-navbar-fixed .rd-navbar-panel {
-	background: #110a06;
+	background: transparent;
 	box-shadow: 0 3px 11px 0 #000;
 }
 
@@ -25156,6 +25155,46 @@ box-shadow:
 	animation-delay: 0.15s;
   }
 
+  @keyframes wave1 {
+	from {
+	  transform: scaleY(1);
+	}
+  
+	to {
+	  transform: scaleY(0.5);
+	}
+  }
+  
+  @keyframes wave2 {
+	from {
+	  transform: scaleY(0.3);
+	}
+  
+	to {
+	  transform: scaleY(0.6);
+	}
+  }
+  
+  @keyframes wave3 {
+	from {
+	  transform: scaleY(0.6);
+	}
+  
+	to {
+	  transform: scaleY(0.8);
+	}
+  }
+  
+  @keyframes wave4 {
+	from {
+	  transform: scaleY(0.2);
+	}
+  
+	to {
+	  transform: scaleY(0.5);
+	}
+}
+
   .titulo-inicio {
 	font-size: 3rem; /* Tamaño del título */
 	font-weight: bold;
@@ -25166,39 +25205,82 @@ box-shadow:
 	gap: 10px; /* Espacio entre el texto y el botón */
 	  
   }
-/* From Uiverse.io by r7chardgh */
-.ctrl {
-	display: flex;
-	position: relative;
-	width: 3em;
-	height: 3em;
-	transform: rotateX(30deg);
-	border-radius: 0.2em;
-	border: 1px solid #3f3f3f;
-	box-shadow: 0 0.3em 0 0.1em #3f3f3f;
-	transition: all 150ms;
-  }
-  
-  .ctrl::after {
-	position: absolute;
-	content: "+";
-	top: 50%; /* Centra verticalmente */
-	left: 50%; /* Centra horizontalmente */
-	transform: translate(-50%, -50%); /* Ajusta el centrado */
-	color: #3f3f3f;
-	font-size: 1.5em; /* Ajusta el tamaño del símbolo "+" */
-	text-align: center;
-	line-height: 1; /* Asegura que el texto esté centrado verticalmente */
-  }
-  
-  .ctrl:active {
-	transform: rotateX(30deg) translateY(0.3em);
-	box-shadow: 0 0 0 0 #3f3f3f;
-  }
-  
-	
-  
 
+  .bambu{
+	background-image: url('../images/bambu.jpeg');
+    background-size: cover; /* Asegura que cubre toda el área */
+    background-position: center; /* Centra la imagen */
+    background-attachment: fixed; /* Efecto parallax */
+    height: 100vh; /* Altura completa del viewport */
+  }
+/* Estilos base */
+.section-cover {
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* Panda ocupa 1 parte, Switch ocupa 2 partes */
+    gap: 1em; /* Espacio entre los elementos */
+    place-items: center; /* Centrar horizontal y verticalmente */
+    padding: 1em; /* Espaciado interno */
+    min-height: 100vh; /* Asegura que el contenedor ocupe toda la altura de la pantalla */
+	justify-content: center; /* Centrar horizontalmente */
+    align-items: center;
+}
+
+
+
+.panda-img {
+    max-width: 100%; /* Asegura que el panda no se salga del contenedor */
+    height: auto;
+    transform: scale(5.0);
+	transition: transform 0.3s ease-in-out;
+}
+
+
+
+.switch-card {
+    transform: scale(2.0); /* Tamaño inicial de la Switch */
+    transition: transform 0.3s ease-in-out;
+	display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+}
+
+/* Media Query para pantallas medianas (tablets) */
+@media (max-width: 1024px) {
+    .section-cover {
+        grid-template-columns: 1fr; /* Una sola columna (panda arriba, Switch abajo) */
+    }
+
+    .panda-img {
+        transform: scale(1.5); /* Reducir el tamaño del panda en tablets */
+    }
+
+    .switch-card {
+        transform: scale(1.0); /* Reducir el tamaño de la Switch en tablets */
+    }
+}
+
+/* Media Query para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+    .panda-img {
+        transform: scale(0.8); /* Reducir más el tamaño del panda en móviles */
+    }
+
+    .switch-card {
+        transform: scale(0.8); /* Tamaño más pequeño de la Switch en móviles */
+    }
+}
+
+/* Pantallas extra pequeñas (móviles pequeños) */
+@media (max-width: 480px) {
+    .panda-img {
+        transform: scale(0.8); /* Tamaño más pequeño del panda en móviles pequeños */
+    }
+
+    .switch-card {
+        transform: scale(0.7); /* Tamaño más pequeño de la Switch en móviles pequeños */
+    }
+}
+	
 @media (max-width: 1199.98px) {
 	.banner-top {
 		display: none;
